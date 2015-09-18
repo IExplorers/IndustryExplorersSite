@@ -10,11 +10,20 @@ This README documents the steps necessary to get the Industry Explorer Site  up 
 
 ### How do I get set up? ###
 
-* Summary of set up:
+* Summary of set up: (Linux)
     * Copy the HTTPS link (located at the top right corner of this page)
     * In your console, type: git clone <httpslink>
     * This will create a directory called explorersite in your directory. Move into the explorersite directory and type: git pull origin master to get the most up-to-date version of the site.
     * In a different tab in your console, and in the explorersite directory, start a simple server to view the site in your browser: python -m simpleHTTPServer 8080
+    * In the browser, type: localhost:8080/templates
+
+* Summary of set up: (Windows)
+    * Install git client
+    * Install python 2.7
+    * Copy the HTTPS link (located at the top right corner of this page)
+    * In your console, type: git clone <httpslink>
+    * This will create a directory called explorersite in your current working directory. 
+    * In a different tab in your console, and in the explorersite directory, start a simple server to view the site in your browser: C:\Python27\python.exe -m SimpleHTTPServer
     * In the browser, type: localhost:8080/templates
 
 * Configuration
