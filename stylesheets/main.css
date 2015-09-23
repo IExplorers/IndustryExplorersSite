@@ -4,37 +4,53 @@
     padding-bottom:60px;
 }
 
-blockquote {
-font-family: Georgia, serif;
-font-size: 18px;
-font-style: italic;
-width: 500px;
-margin: 0.25em 0;
-padding: 0.25em 40px;
-line-height: 1.45;
-position: relative;
-color: #383838;
+.description
+{
+    padding: 20px;
+    margin: 40px;
 }
 
-blockquote:before {
-display: block;
+blockquote
+{
+    border-style:none;
+}
+
+blockquote p
+{
+font-family: Georgia, serif;
+font-size: 1.11em;
+font-style: italic;
+margin: 0.25em 0;
+padding: 0.25em 30px;
+position: relative;
+color: #383838;
+
+}
+
+
+blockquote p::before {
 content: "\201C";
-font-size: 80px;
 position: absolute;
-left: -20px;
-top: -20px;
-color: #7a7a7a;
+left: -10px;
+top: -10px;
+}
+
+blockquote p::after {
+content: "\201D";
+}
+
+blockquote p::before, blockquote p::after
+{
+    font-size:4em;
+    line-height:1;
+    position:absolute;
+    color: #ebebeb;
 }
 
 blockquote cite {
-color: #999999;
+color: #7a7a7a;
 font-size: 14px;
 display: block;
+text-transform:uppercase;
 margin-top: 5px;
 }
- 
-blockquote cite:before {
-content: "\2014 \2009";
-}
-
-

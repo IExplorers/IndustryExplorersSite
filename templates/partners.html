@@ -19,6 +19,24 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!--
+    To collect end-user usage analytics about your application,
+    insert the following script into each page you want to track.
+    Place this code immediately before the closing </head> tag,
+    and before any other scripts. Your first data will appear
+    automatically in just a few seconds.
+    -->
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (config) {
+            function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f; for (s.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) r("track" + i.pop()); return r("setAuthenticatedUserContext"), r("clearAuthenticatedUserContext"), config.disableExceptionTracking || (i = "onerror", r("_" + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t["_" + i](config, r, u, e, o), s }), t
+        }({
+            instrumentationKey: "91fdfdea-4a5a-4f6c-bc1e-5a4f47293a43"
+        });
+
+        window.appInsights = appInsights;
+        appInsights.trackPageView();
+    </script>
+
 </head>
 <body>
     <!-- Navigation -->
@@ -60,50 +78,48 @@
 
     <!-- Page Content -->
     <div class="container">
-        <!-- Content Row -->
-
+    
         <!-- Just a heading -->
         <div class="row">
-            <div class="col-lg-12">
-                <div class="well text-left">
+            <div class="col-md-12">
+                <div class="well text-center">
                     <h2>Meet our partners</h2>
                 </div>
             </div>
-            <!-- /.col-lg-12 -->
+            <!-- /.col-md-12 -->
         </div>
         <!-- /.row -->
 
         <!-- Ada Developers Academy-->
         <div class="row">     
-              <div class="col-lg-6">
-                          
-                <img src="http://placehold.it/250X400" alt="" />
+              <div class="col-md-6">                          
+                <img src="http://placehold.it/500X400" alt="" class="img-responsive"/>
                 <blockquote>
-                  <p>Women are underserved by traditional technology education in high school and college. Ada is a way for women to break into software development, raise their salaries, and contribute in meaningful ways to the future of tech.</p>
-                  <cite>Elise Worthy, Ada Technical Director</cite>
+                  <p>Gender diversity is key. Diverse teams build a better product overall.</p>
+                    <cite>Cynthia Tee, Executive Director</cite>
                 </blockquote>
-            </div> <!-- end .col-6 -->
-            <div class="col-lg-6">
-                <h4>
-                    Ada Developers Academy (Ada) is an intensive software developer training school for women. Ada's unique year-long program begins with seven months of classroom instruction in cutting-edge web technologies in which students learn the most up-to-date development skills from leading regional and national experts.
-                </h4>
+                </div> <!-- end .col-6 -->
+           
+             <div class="col-md-6">               
+                   <h4 class="description">
+                       <strong>Ada Developers Academy (Ada) </strong>is an intensive software developer training school for women. Ada's unique year-long program begins with seven months of classroom instruction in cutting-edge web technologies in which students learn the most up-to-date development skills from leading regional and national experts.
+                   </h4>              
             </div> <!-- end .col-6 -->
         </div>        
         <!--Ada-->
-
+        <hr>
         <!--Kal Academy-->
         <div class="row">
-            <div class="col-lg-6">
-
-                <img src="http://placehold.it/250X400" alt="" />
+            <div class="col-md-6">
+                <img src="http://placehold.it/500X400" alt="" class="img-responsive"/>
                 <blockquote>
-                    <p>Women are underserved by traditional technology education in high school and college. Ada is a way for women to break into software development, raise their salaries, and contribute in meaningful ways to the future of tech.</p>
-                    <cite>Kal, Kal Academy Director</cite>
+                    <p>Life is not about what you could not do so far, it's about what you still can.</p>
+                    <cite>Kal, Executive Director</cite>
                 </blockquote>
             </div> <!-- end .col-6 -->
-            <div class="col-lg-6">
-                <h4 class="media-heading">
-                    Kal Academy is a non-profit organization that offers a unique, fun, and innovative approach to teaching code, math, and science with the goal to bring more women into the tech industry. We help you gain a strong skills foundation while making even difficult concepts fun and easy to learn.
+            <div class="col-md-6">
+                <h4 class="description">
+                    <strong>Kal Academy</strong> is a non-profit organization that offers a unique, fun, and innovative approach to teaching code, math, and science with the goal to bring more women into the tech industry. We help you gain a strong skills foundation while making even difficult concepts fun and easy to learn.
                 </h4>
             </div> <!-- end .col-6 -->
         </div>            
@@ -112,21 +128,19 @@
         <!-- Logo Row -->
         <div class="row">
             <div class="col-md-4">
-
             </div>
             <div class="col-md-4 logo">
                 <img src="http://placehold.it/150x50&text=Kal Logo" alt="">
                 <img src="http://placehold.it/150x50&text=AdaLogo" alt="">
             </div>
             <div class="col-md-4">
-
             </div>
         </div>
         <!--Logo Row-->
 
         <!--Form-->
         <div class="row">
-            <div class="col-lg-4 well">
+            <div class="col-md-4 well">
                 <form role="form">
                     <div class="form-group">
                         <label for="orgname">Organization Name:</label>
@@ -145,21 +159,25 @@
                         <input type="password" class="form-control" id="website" placeholder="Enter website">
                     </div>
 
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
         <!--Form End-->
+
         <!-- Footer -->
-                <footer>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p>Copyright &copy; Your Website 2015 </p>
-                        </div>
-                    </div>
-                </footer>
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2015 </p>
+                </div>
             </div>
-            <!-- /.container -->
+        </footer>
+        <!--Footer-->
+
+    </div>
+    <!-- /.container -->
+
             <!-- jQuery -->
             <script src="/scripts/libraries/jquery.js"></script>
             <!-- Bootstrap Core JavaScript -->
