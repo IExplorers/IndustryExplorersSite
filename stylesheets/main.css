@@ -4,11 +4,19 @@ html * {
 
 #heading {
     text-position: center;
-    background-color: red;
-    height: 400px;
+    background-color: rgb(109, 194, 233);
+    height: 450px;
+    width: auto;
+
 }
 
-body {
-    padding-top: 49px;
+.navbar {
+    margin: 0;
+    background-color: white;
+    color: white;
+    border: none;
 }
 
+.nav {
+    color: white;
+}
