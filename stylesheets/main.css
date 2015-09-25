@@ -1,56 +1,42 @@
-.logo
-{
-    padding-top:60px;
-    padding-bottom:60px;
+html * {
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-.description
-{
-    padding: 20px;
-    margin: 40px;
-}
-
-blockquote
-{
-    border-style:none;
-}
-
-blockquote p
-{
-font-family: Georgia, serif;
-font-size: 1.11em;
-font-style: italic;
-margin: 0.25em 0;
-padding: 0.25em 30px;
-position: relative;
-color: #383838;
+#heading {
+    text-position: center;
+    background-color: rgb(109, 194, 233);
+    height: 450px;
+    width: auto;
 
 }
 
-
-blockquote p::before {
-content: "\201C";
-position: absolute;
-left: -10px;
-top: -10px;
+.navbar {
+    margin: 0;
+    background-color: white;
+    color: white;
+    border: none;
 }
 
-blockquote p::after {
-content: "\201D";
+.nav {
+    color: white;
 }
 
-blockquote p::before, blockquote p::after
-{
-    font-size:4em;
-    line-height:1;
-    position:absolute;
-    color: #ebebeb;
+p {
+    font-size: 16px;
+}
+#heading h1 {
+   color: white;
+   font-family: 'Josefin Sans', sans-serif;
+   text-align:center;
+   padding-top: 20px;
+   font-size: 60px;
+}
+#heading img {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
-blockquote cite {
-color: #7a7a7a;
-font-size: 14px;
-display: block;
-text-transform:uppercase;
-margin-top: 5px;
+ul.nav.navbar-nav {
+    float: right;
 }
