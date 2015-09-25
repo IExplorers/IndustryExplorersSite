@@ -1,0 +1,38 @@
+html * {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#heading {
+    text-position: center;
+    background-color: rgb(109, 194, 233);
+    height: 450px;
+    width: auto;
+
+}
+
+.navbar {
+    margin: 0;
+    background-color: white;
+    color: white;
+    border: none;
+}
+
+.nav {
+    color: white;
+}
+
+p {
+    font-size: 16px;
+}
+#heading h1 {
+   color: white;
+   font-family: 'Josefin Sans', sans-serif;
+   text-align:center;
+   padding-top: 20px;
+   font-size: 60px;
+}
+#heading img {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
