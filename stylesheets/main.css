@@ -20,3 +20,15 @@ html * {
 .nav {
     color: white;
 }
+
+p {
+    font-size: 16px;
+}
+#heading h1 {
+   color: white;
+   font-family: 'Josefin Sans', sans-serif;
+   text-align:center;
+   padding-top: 20px;
+   font-size: 60px;
+
+}
