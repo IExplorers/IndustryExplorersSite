@@ -44,7 +44,7 @@ p {
 }
 
 #illustration img {
-    display: block; 
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -54,15 +54,14 @@ ul.nav.navbar-nav {
 }
 
 .icon-img {
-    float: left; 
+    float: left;
     margin-top: 20px;
     margin-right: 10px;
     clear: both;
 }
 
 .icon-content {
-    margin-top: 20px;
-    margin-left: 0px;
+    margin: 20px 0px 20px 0px;
     overflow: auto;
     display: block;
 }
@@ -71,4 +70,22 @@ ul.nav.navbar-nav {
     margin-top: 0px;
 }
 
+.icon-content p {
+    margin-bottom: 20px;
+}
 
+.btn-default {
+    color: #FFFFFF;
+    background-color: #B4009E;
+    border-color: none;
+}
+
+.well {
+    border: none;
+    border-radius: 0px;
+    background-color: #EEEEEE;
+}
+
+.icon-content h2 {
+    margin-top: 0px;
+}
