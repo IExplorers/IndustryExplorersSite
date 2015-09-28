@@ -53,9 +53,22 @@ ul.nav.navbar-nav {
     float: right;
 }
 
-.icon-content {
-    background-color: red;
-    display: block;
-    padding-left: 5px;
-    position: relative;
+.icon-img {
+    float: left; 
+    margin-top: 20px;
+    margin-right: 10px;
+    clear: both;
 }
+
+.icon-content {
+    margin-top: 20px;
+    margin-left: 0px;
+    overflow: auto;
+    display: block;
+}
+
+.icon-content h2 {
+    margin-top: 0px;
+}
+
+
