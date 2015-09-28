@@ -1,8 +1,8 @@
 html * {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Segoe', sans-serif;
 }
 
-#heading {
+#illustration {
     text-position: center;
     background-color: rgb(109, 194, 233);
     height: 450px;
@@ -16,22 +16,34 @@ html * {
     color: white;
     border: none;
 }
+.navbar .nav li a {
+    color: #4f4f4f;
+}
 
-.nav {
+.navbar .nav li a:hover {
+    color: #B4009E;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+   background-color: #4f4f4f;
+}
+
+.navbar-collapse .navbar .nav li a {
     color: white;
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;
 }
-#heading h1 {
+
+#illustration h1 {
    color: white;
-   font-family: 'Josefin Sans', sans-serif;
    text-align:center;
    padding-top: 20px;
    font-size: 60px;
 }
-#heading img {
+
+#illustration img {
     display: block; 
     margin-left: auto;
     margin-right: auto;
@@ -39,4 +51,11 @@ p {
 
 ul.nav.navbar-nav {
     float: right;
+}
+
+.icon-content {
+    background-color: red;
+    display: block;
+    padding-left: 5px;
+    position: relative;
 }
