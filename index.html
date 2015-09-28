@@ -20,7 +20,7 @@
     <link href="/resources
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel='stylesheet' type='text/css'>
 
-    
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -31,6 +31,15 @@
 </head>
 
 <body>
+  <!-- This is for the Facebook share link-->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -60,7 +69,7 @@
                         <a href="#">Partners</a>
                     </li>
                     <li>
-                        <a href="#">Applicants</a> 
+                        <a href="#">Applicants</a>
                     </li>
                 </ul>
             </div>
@@ -83,7 +92,7 @@
         </div>
        <!-- /.row -->
 
-    
+
         <!-- Call to Action Well -->
         <div class="row">
             <div class="col-lg-12">
@@ -99,7 +108,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-			
+
                     <h2><img src="/resources/molecule1.png"></img>Program Information</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
                     passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -124,16 +133,30 @@ Partner Information</h2>
             </div>
             <!-- /.row -->
 
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; 2015 - Microsoft Corporation - All Rights Reserved. </p>
-                </div>
-            </div>
-        </footer>
 
     </div>
+
+    <!-- Footer -->
+
+    <nav class="navbar navbar-inverse navbar-bottom">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Industry Explorers</a>
+        </div>
+        <div>
+          <ul class="nav navbar-nav">
+            <li>Share</li>
+            <li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://explorers.microsoft.com" data-size="large">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+            <li><div class="fb-share-button" data-href="https://explorers.microsoft.com" data-layout="icon_link"></div></li>
+
+            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://explorers.microsoft.com&title=Micosoft Industry Explorers&summary=Microsoft Industry Explorers&source=My Website Name" target="_new"> <img src="https://c.s-microsoft.com/en-us/CMSImages/linkedin_icon.png?version=806a2655-ccf5-c9f1-74bc-ceed4d5839a5" class="mscom-image" alt="linkedin share button" width="17" height="17" title="Share on Linked In" /> </a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <!-- /.container -->
 
     <!-- jQuery -->
