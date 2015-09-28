@@ -42,9 +42,14 @@ p {
    padding-top: 20px;
    font-size: 60px;
 }
+<<<<<<< HEAD
+#heading img {
+    display: block;
+=======
 
 #illustration img {
     display: block; 
+>>>>>>> master
     margin-left: auto;
     margin-right: auto;
 }
@@ -53,6 +58,23 @@ ul.nav.navbar-nav {
     float: right;
 }
 
+<<<<<<< HEAD
+.navbar-bottom {
+  margin border: solid;
+  margin: 0 auto;
+  background-color: #D2D2D2;
+}
+
+.navbar-nav > li{
+  padding-left:15px;
+  padding-right:15px;
+  position: relative;
+  font-size: 17px;
+}
+
+.navbar-nav > li#share {
+  padding-top:16px;
+=======
 .icon-img {
     float: left; 
     margin-top: 20px;
@@ -84,4 +106,5 @@ ul.nav.navbar-nav {
     border: none;
     border-radius: 0px;
     background-color: #EEEEEE;
+>>>>>>> master
 }
