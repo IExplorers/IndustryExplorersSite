@@ -51,5 +51,9 @@ ul.nav.navbar-nav {
   padding-left:15px;
   padding-right:15px;
   position: relative;
+  font-size: 17px;
+}
 
+.navbar-nav > li#share {
+  padding-top:16px;
 }
