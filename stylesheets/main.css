@@ -79,3 +79,9 @@ ul.nav.navbar-nav {
     background-color: #B4009E;
     border-color: none;
 }
+
+.well {
+    border: none;
+    border-radius: 0px;
+    background-color: #EEEEEE;
+}
