@@ -61,7 +61,8 @@ ul.nav.navbar-nav {
 }
 
 .icon-content {
-    margin: 20px 0px 20px 0px;
+    height: 400px;
+    margin-top: 20px;
     overflow: auto;
     display: block;
 }
@@ -71,13 +72,22 @@ ul.nav.navbar-nav {
 }
 
 .icon-content p {
-    margin-bottom: 20px;
+    margin: 20px 0 20px 0;
 }
 
-.btn-default {
+.icon-content .btn-default {
     color: #FFFFFF;
     background-color: #B4009E;
-    border-color: none;
+    border: 0px;
+    border-radius: none;
+    position: absolute;
+    bottom: 0;
+}
+
+.btn-default:hover {
+    border: none;
+    background-color: #B4009E;
+    color: #FFFFFF;
 }
 
 .well {
