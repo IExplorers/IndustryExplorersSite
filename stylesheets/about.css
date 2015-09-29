@@ -1,3 +1,7 @@
+html * {
+    font-family: 'Segoe', sans-serif;
+}
+
 #illustration {
     text-position: center;
     background-color: rgb(109, 194, 233);
@@ -74,14 +78,4 @@ ul.nav.navbar-nav {
     color: #FFFFFF;
     background-color: #B4009E;
     border-color: none;
-}
-
-.well {
-    border: none;
-    border-radius: 0px;
-    background-color: #EEEEEE;
-}
-
-.icon-content h2 {
-    margin-top: 0px;
 }
