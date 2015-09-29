@@ -85,3 +85,24 @@ ul.nav.navbar-nav {
 .icon-content h2 {
     margin-top: 0px;
 }
+
+ul.nav.navbar-nav {
+    float: right;
+}
+
+.navbar-bottom {
+  margin border: solid;
+  margin: 0 auto;
+  background-color: #D2D2D2;
+}
+
+.navbar-nav > li{
+  padding-left:15px;
+  padding-right:15px;
+  position: relative;
+  font-size: 17px;
+}
+
+.navbar-nav > li#share {
+  padding-top:16px;
+}
