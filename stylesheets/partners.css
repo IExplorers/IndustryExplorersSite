@@ -1,13 +1,8 @@
-html * {
-    font-family: 'Josefin Sans', sans-serif;
-}
-
 #heading {
     text-position: center;
     background-color: rgb(109, 194, 233);
     height: 450px;
     width: auto;
-
 }
 
 .navbar {
@@ -22,8 +17,9 @@ html * {
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;
 }
+
 #heading h1 {
    color: white;
    font-family: 'Josefin Sans', sans-serif;
