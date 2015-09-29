@@ -16,6 +16,7 @@ html * {
     color: white;
     border: none;
 }
+
 .navbar .nav li a {
     color: #4f4f4f;
 }
@@ -53,6 +54,12 @@ ul.nav.navbar-nav {
     float: right;
 }
 
+.content-wrapper {
+    margin: 0;
+    width: auto;
+    padding: 0 20px 0 20px; 
+}
+
 .icon-img {
     float: left; 
     margin-top: 20px;
@@ -61,30 +68,41 @@ ul.nav.navbar-nav {
 }
 
 .icon-content {
-    height: 400px;
-    margin-top: 20px;
+    height: 440px;
+    margin: 20px 0 0 0;
     overflow: auto;
     display: block;
-}
-
-.icon-content h2 {
-    margin-top: 0px;
 }
 
 .icon-content p {
     margin: 20px 0 20px 0;
 }
 
-.btn-default {
-    color: #FFFFFF;
-    background-color: #B4009E;
-    border: 0px;
-    border-radius: none;
+#stats img {
+    padding-top: 20px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#stats {
+    text-align: center;
+}
+
+.icon-content h2 {
+    margin-top: 0px;
 }
 
 .icon-content .btn-default {
     position: absolute;
     bottom: 0;
+}
+
+.btn-default {
+    color: #FFFFFF;
+    background-color: #B4009E;
+    border: 0px;
+    border-radius: 0px;
 }
 
 .btn-default:hover {
