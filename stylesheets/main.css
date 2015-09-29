@@ -1,1 +1,91 @@
+html * {
+    font-family: 'Segoe', sans-serif;
+}
 
+#illustration {
+    text-position: center;
+    background-color: rgb(109, 194, 233);
+    height: 450px;
+    width: auto;
+
+}
+
+.navbar {
+    margin: 0;
+    background-color: white;
+    color: white;
+    border: none;
+}
+.navbar .nav li a {
+    color: #4f4f4f;
+}
+
+.navbar .nav li a:hover {
+    color: #B4009E;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+   background-color: #4f4f4f;
+}
+
+.navbar-collapse .navbar .nav li a {
+    color: white;
+}
+
+p {
+    font-size: 14px;
+}
+
+#illustration h1 {
+   color: white;
+   text-align:center;
+   padding-top: 20px;
+   font-size: 60px;
+}
+
+#illustration img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul.nav.navbar-nav {
+    float: right;
+}
+
+.icon-img {
+    float: left;
+    margin-top: 20px;
+    margin-right: 10px;
+    clear: both;
+}
+
+.icon-content {
+    margin: 20px 0px 20px 0px;
+    overflow: auto;
+    display: block;
+}
+
+.icon-content h2 {
+    margin-top: 0px;
+}
+
+.icon-content p {
+    margin-bottom: 20px;
+}
+
+.btn-default {
+    color: #FFFFFF;
+    background-color: #B4009E;
+    border-color: none;
+}
+
+.well {
+    border: none;
+    border-radius: 0px;
+    background-color: #EEEEEE;
+}
+
+.icon-content h2 {
+    margin-top: 0px;
+}
