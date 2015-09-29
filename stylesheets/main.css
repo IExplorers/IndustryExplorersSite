@@ -75,11 +75,14 @@ ul.nav.navbar-nav {
     margin: 20px 0 20px 0;
 }
 
-.icon-content .btn-default {
+.btn-default {
     color: #FFFFFF;
     background-color: #B4009E;
     border: 0px;
     border-radius: none;
+}
+
+.icon-content .btn-default {
     position: absolute;
     bottom: 0;
 }
