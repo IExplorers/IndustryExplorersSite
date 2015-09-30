@@ -17,17 +17,12 @@
     <!-- Custom CSS -->
     <link href="/stylesheets/libraries/small-business.css" rel="stylesheet">
     <link href="/stylesheets/main.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="/resources">
+    <link href="/resources/fonts">
 
 </head>
 
 <body>
-
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -40,7 +35,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/">
                     <img src="/resources/microsoft.png" alt="Microsoft Logo">
                 </a>
             </div>
@@ -48,16 +43,16 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
-		        <a href="#">About</a>
+		                    <a href="/about.html">About</a>
                     </li>
                     <li>
-                        <a href="#">Partners</a>
+                        <a href="/partners.html">Partners</a>
                     </li>
                     <li>
-                        <a href="#">Applicants</a>
+                        <a href="/about.html">Applicants</a>
                     </li>
                 </ul>
             </div>
@@ -67,7 +62,6 @@
     </nav>
 
     <!-- Page Content -->
-        <!-- Heading Row -->
         <div class="row">
            <div class="col-md-12">
                <div id="illustration">
@@ -93,68 +87,86 @@
         <!-- /.row -->
 
         <!-- Content Row -->
-        <div class="container">
+        <div class="container content-wrapper">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
 		    <span class="icon-img">
 			<img src="/resources/molecule1.png"></img></span>
 		    <span class="icon-content">
                     	<h2>Program Information</h2>
-                    	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    	<a class="btn btn-default" href="/participants">More Info</a>
-		    </span>
-                </div>
-                <!-- /.col-md-4 -->
+                        <p>Looking for a career with an innovative company who values
+			   diverse perspectives?  Passionate about technology but don’t
+			   have a computer science degree?</p>
 
-                <div class="col-md-4">
-		    <span class="icon-img">
-			<img src="/resources/molecule2.png"></img></span>
-                    <span class="icon-content">
-			<h2>Stats</h2>
-                    	<img src="/resources/stats.png" alt="graph placeholder"></img>
+			<p>Industry Explorers is a new program at Microsoft whose mission
+			   is to enrich diversity by embracing different perspectives.
+			   Participants come from many different industries and
+			   professions like psychology, lingusitics, chemistry, industrial
+			   engineering and child care. All, however, share a common passion for
+			   excellence.</p>
+
+			<p>If you would like to join this initiative, please
+			   visit our program information page to learn more.</p>
+
+			<a class="btn btn-default" href="/participants">More Info</a>
 		    </span>
                 </div>
-                <!-- /.col-md-2 -->
-		<div class="col-md-4">
+                <!-- /.col-md-3 -->
+
+                <div class="col-md-6">
+                    <span class="icon-content" id="stats">
+			<h2>Microsoft Workforce: Ethnicities in Tech</h2>
+			<!-- <p>Did we want content here?</p> -->
+                    	<img src="/resources/race-stats3.png" alt="58% caucasian, 4% latino, 2% black, 1% Multi-racial 0.5% American Indian"></img>
+		    </span>
+                </div>
+                <!-- /.col-md-6 -->
+		<div class="col-md-3">
 		    <span class="icon-img">
 		    	<img src="/resources/molecule3.png"></img>
 		    </span>
 		    <span class="icon-content">
                     	<h2>Partner Information</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <a class="btn btn-default" href="/sponsors">More Info</a>
-                    </span>
+			<p><b>col·lab·o·ra·tion</b></p>
+
+			<p>NOUN: the action of working with someone to produce or create something.</p>
+			<p>Success is a product of collaboration. Opportunity lies
+			   in networking, communication, interaction and exchange
+			   of ideas.  Microsoft’s Industry Explorer Program, in partnership
+			   with Ada Developers Academy and Kal Academy, has created a
+			   pipeline to empower individuals with non-traditional backgrounds,
+			   to excel in the technology field.  If your
+			   company is interested in being on the leading edge of this
+			   initiative, please visit our partner page.</p>
+        <a class="btn btn-default" href="/sponsors">More Info</a>
+        </span>
 		</div>
-                <!-- /.col-md-4 -->
-            </div>
-            <!-- /.row -->
+    <!-- /.col-md-4 -->
+  </div>
+  <!-- /.row -->
+</div>
+                <!-- Footer -->
 
+                <nav class="navbar navbar-inverse navbar-bottom">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <a class="navbar-brand" href="#">Industry Explorers</a>
+                    </div>
+                    <div>
+                      <ul class="nav navbar-nav">
+                        <li id=share>Share</li>
 
-    </div>
+                        <li><a target="_blank" class="mscom-link socialItemIcon twitter" href="https://twitter.com/share?text=Learn more about the Industry Explorers program at &url=http://explorers.microsoft.com"><img src="https://c.s-microsoft.com/en-us/CMSImages/twitter_icon.png?version=3b7b882c-8ac4-b052-70ba-f2ff1414bfe0" class="mscom-image" alt="Share on Twitter" title="Share on Twitter" width="20" height="17"></a></li>
 
-    <!-- Footer -->
+                        <li><a target="_blank" class="mscom-link socialItemIcon faceBook" href="https://www.facebook.com/sharer/sharer.php"><img src="https://c.s-microsoft.com/en-us/CMSImages/facebook_icon.png?version=10638df0-5377-0141-d379-24dbd886ea7f" class="mscom-image" alt="Share on Facebook" title="Share on Facebook" width="9" height="18"></a></li>
 
-    <nav class="navbar navbar-inverse navbar-bottom">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Industry Explorers</a>
-        </div>
-        <div>
-          <ul class="nav navbar-nav">
-            <li id=share>Share</li>
+                        <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://explorers.microsoft.com&title=Micosoft Industry Explorers&summary=Microsoft Industry Explorers&source=My Website Name" target="_new"> <img src="https://c.s-microsoft.com/en-us/CMSImages/linkedin_icon.png?version=806a2655-ccf5-c9f1-74bc-ceed4d5839a5" class="mscom-image" alt="linkedin share button" width="17" height="17" title="Share on LinkedIn" /> </a></li>
 
-            <li><a target="_blank" class="mscom-link socialItemIcon twitter" href="https://twitter.com/share?text=Learn more about the Industry Explorers program at &url=http://explorers.microsoft.com"><img src="https://c.s-microsoft.com/en-us/CMSImages/twitter_icon.png?version=3b7b882c-8ac4-b052-70ba-f2ff1414bfe0" class="mscom-image" alt="Share on Twitter" title="Share on Twitter" width="20" height="17"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
 
-            <li><a target="_blank" class="mscom-link socialItemIcon faceBook" href="https://www.facebook.com/sharer/sharer.php"><img src="https://c.s-microsoft.com/en-us/CMSImages/facebook_icon.png?version=10638df0-5377-0141-d379-24dbd886ea7f" class="mscom-image" alt="Share on Facebook" title="Share on Facebook" width="9" height="18"></a></li>
-
-            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://explorers.microsoft.com&title=Micosoft Industry Explorers&summary=Microsoft Industry Explorers&source=My Website Name" target="_new"> <img src="https://c.s-microsoft.com/en-us/CMSImages/linkedin_icon.png?version=806a2655-ccf5-c9f1-74bc-ceed4d5839a5" class="mscom-image" alt="linkedin share button" width="17" height="17" title="Share on Linked In" /> </a></li>
-
-          </ul>
-        </div>
-      </div>
-    </nav>
 
     <!-- /.container -->
 
