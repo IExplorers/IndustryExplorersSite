@@ -1,7 +1,3 @@
-html * {
-    font-family: 'Segoe', sans-serif;
-}
-
 #illustration {
     text-position: center;
     background-color: rgb(109, 194, 233);
@@ -44,7 +40,7 @@ p {
 }
 
 #illustration img {
-    display: block; 
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -54,14 +50,15 @@ ul.nav.navbar-nav {
 }
 
 .icon-img {
-    float: left; 
+    float: left;
     margin-top: 20px;
     margin-right: 10px;
     clear: both;
 }
 
 .icon-content {
-    margin: 20px 0px 20px 0px;
+    height: 400px;
+    margin-top: 20px;
     overflow: auto;
     display: block;
 }
@@ -71,13 +68,22 @@ ul.nav.navbar-nav {
 }
 
 .icon-content p {
-    margin-bottom: 20px;
+    margin: 20px 0 20px 0;
 }
 
-.btn-default {
+.icon-content .btn-default {
     color: #FFFFFF;
     background-color: #B4009E;
-    border-color: none;
+    border: 0px;
+    border-radius: none;
+    position: absolute;
+    bottom: 0;
+}
+
+.btn-default:hover {
+    border: none;
+    background-color: #B4009E;
+    color: #FFFFFF;
 }
 
 .well {
@@ -85,3 +91,80 @@ ul.nav.navbar-nav {
     border-radius: 0px;
     background-color: #EEEEEE;
 }
+
+.icon-content h2 {
+    margin-top: 0px;
+}
+
+ul.nav.navbar-nav {
+    float: right;
+}
+
+.navbar-bottom {
+  margin border: solid;
+  margin: 0 auto;
+  background-color: #D2D2D2;
+}
+
+.navbar-nav > li{
+  padding-left:15px;
+  padding-right:15px;
+  position: relative;
+  font-size: 17px;
+}
+
+.navbar-nav > li#share {
+  padding-top:16px;
+}
+
+blockquote
+{
+    border-style:none;
+}
+
+blockquote p
+{
+font-size: 1.11em;
+margin: 0.25em 0;
+padding: 0.25em 20px;
+position: relative;
+color: #505050;
+}
+
+blockquote p::before {
+content: "\201C";
+position: absolute;
+left: -10px;
+top: -10px;
+}
+
+blockquote p::after {
+content: "\201D";
+}
+
+blockquote p::before, blockquote p::after
+{
+    font-size:4em;
+    line-height:1;
+    position:absolute;
+    color: lightgray;
+}
+
+blockquote cite {
+color:  #737373 ;
+font-size: 14px;
+display: block;
+text-transform:uppercase;
+margin-top: 5px;
+}
+
+.meetPartnerBorder
+{
+    background-color:#e3e3e3;
+    border:1px solid #e3e3e3;
+}
+
+.h2Top{
+    margin-top:0px;
+    margin-bottom:20px;
+    color:#337ab7;
