@@ -85,3 +85,56 @@ ul.nav.navbar-nav {
     border-radius: 0px;
     background-color: #EEEEEE;
 }
+
+
+blockquote
+{
+    border-style:none;
+}
+
+blockquote p
+{
+font-size: 1.11em;
+margin: 0.25em 0;
+padding: 0.25em 20px;
+position: relative;
+color: #505050;
+}
+
+blockquote p::before {
+content: "\201C";
+position: absolute;
+left: -10px;
+top: -10px;
+}
+
+blockquote p::after {
+content: "\201D";
+}
+
+blockquote p::before, blockquote p::after
+{
+    font-size:4em;
+    line-height:1;
+    position:absolute;
+    color: lightgray;
+}
+
+blockquote cite {
+color:  #737373 ;
+font-size: 14px;
+display: block;
+text-transform:uppercase;
+margin-top: 5px;
+}
+
+.meetPartnerBorder
+{
+    background-color:#e3e3e3;
+    border:1px solid #e3e3e3;
+}
+
+.h2Top{
+    margin-top:0px;
+    margin-bottom:20px;
+    color:#337ab7;
