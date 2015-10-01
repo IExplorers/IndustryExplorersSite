@@ -39,19 +39,9 @@ p {
    padding-top: 20px;
    font-size: 60px;
 }
-<<<<<<< HEAD
-
-#heading img {
-    display: block;
-}
-
-#illustration img {
-    display: block; 
-=======
 
 #illustration img {
     display: block;
->>>>>>> master
     margin-left: auto;
     margin-right: auto;
 }
@@ -60,33 +50,12 @@ ul.nav.navbar-nav {
     float: right;
 }
 
-<<<<<<< HEAD
-
-.navbar-bottom {
-  margin border: solid;
-  margin: 0 auto;
-  background-color: #D2D2D2;
-}
-
-.navbar-nav > li{
-  padding-left:15px;
-  padding-right:15px;
-  position: relative;
-  font-size: 17px;
-}
-
-.navbar-nav > li#share {
-    padding-top: 16px;
-}
-
-=======
 .content-wrapper {
     margin: 0;
     width: auto;
     padding: 0 20px 0 20px;
 }
 
->>>>>>> master
 .icon-img {
     float: left;
     margin-top: 20px;
@@ -142,8 +111,6 @@ ul.nav.navbar-nav {
     border: none;
     border-radius: 0px;
     background-color: #EEEEEE;
-<<<<<<< HEAD
-=======
 }
 
 .icon-content h2 {
@@ -223,58 +190,4 @@ margin-top: 5px;
 .copyright{
   font-size: 14px;
   color: #FFFFFF !important;
->>>>>>> master
 }
-
-
-blockquote
-{
-    border-style:none;
-}
-
-blockquote p
-{
-font-size: 1.11em;
-margin: 0.25em 0;
-padding: 0.25em 20px;
-position: relative;
-color: #505050;
-}
-
-blockquote p::before {
-content: "\201C";
-position: absolute;
-left: -10px;
-top: -10px;
-}
-
-blockquote p::after {
-content: "\201D";
-}
-
-blockquote p::before, blockquote p::after
-{
-    font-size:4em;
-    line-height:1;
-    position:absolute;
-    color: lightgray;
-}
-
-blockquote cite {
-color:  #737373 ;
-font-size: 14px;
-display: block;
-text-transform:uppercase;
-margin-top: 5px;
-}
-
-.meetPartnerBorder
-{
-    background-color:#e3e3e3;
-    border:1px solid #e3e3e3;
-}
-
-.h2Top{
-    margin-top:0px;
-    margin-bottom:20px;
-    color:#337ab7;
