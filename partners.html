@@ -11,6 +11,7 @@
 
     <title>Industry Explorers</title>
 
+
     <!-- Bootstrap Core CSS -->
     <link href="/stylesheets/libraries/bootstrap.min.css" rel="stylesheet">
 
@@ -20,10 +21,11 @@
     <link href="/resources">
     <link href="/resources/fonts">
 
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src=" https//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
@@ -95,7 +97,7 @@
             <div class="col-md-6">
                 <img src="/resources/PartnersImage.jpg" alt="" class="img-responsive" />
                 <blockquote>
-                    <p>&nbsp In this new wave of technology, you can't do it all yourself, you have to form alliances. &nbsp</p>
+                    <p>&nbsp; In this new wave of technology, you can't do it all yourself, you have to form alliances. &nbsp;</p>
                     <cite>Carlos Slim Helu</cite>
                 </blockquote>
             </div> <!-- end .col-6 -->
@@ -140,38 +142,47 @@
                                 <!-- Modal Body -->
                                 <div class="modal-body">
 
-                                    <form class="form-horizontal" role="form">
+                                    <form id="formparticipant" class="form-horizontal" role="form">
                                       <div class="form-group">
-                                        <label  class="col-sm-2 control-label"
-                                                  for="inputname3">Organization Name</label>
+                                        <label  class="col-sm-2 control-label" for="orgname">Organization Name</label>
                                         <div class="col-sm-10">
-                                            <input type="name" class="form-control"
-                                            id="inputname3" placeholder="Name"/>
+                                            <input type="text" class="form-control" id="orgname" placeholder="Enter oganization name" required/>
                                         </div>
                                       </div>
-                                      <div class="form-group">
-                                        <label class="col-sm-2 control-label"
-                                              for="inputemail3" >Email</label>
-                                        <div class="col-sm-10">
-                                            <input type="email" class="form-control"
-                                                id="inputemail3" placeholder="Email"/>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label" for="contactname">Contact Name:</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="contactname" placeholder="Enter contact name" required>
+                                            </div>
                                         </div>
-                                      </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label" for="email">Email:</label>
+                                            <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="email" pattern="^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z])+$" placeholder="Enter email" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label" for="website">Website:</label>
+                                            <div class="col-sm-10">
+                                                <input type="url" class="form-control" id="website" placeholder="Enter website (starting with http://)">
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal Footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                    data-dismiss="modal">
+                                                Close
+                                            </button>
+                                            <button type="submit" id="btnSubmit" class="btn btn-primary">
+                                                Submit
+                                            </button>
+                                        </div>
+
                                     </form>
 
-
                                 </div>
 
-                                <!-- Modal Footer -->
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default"
-                                            data-dismiss="modal">
-                                                Close
-                                    </button>
-                                    <button type="button" class="btn btn-primary">
-                                        Submit
-                                    </button>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -195,12 +206,11 @@
             <!-- Ada Developers Academy-->
               <div class="col-md-6">
                   <h2>
-                      <img src="/resources/molecule3.png"/>
+                      <img src="/resources/Ada-logo.png"/>
                       <a href="http://adadevelopersacademy.org/" target="_blank">Ada Developers Academy </a>
                   </h2>
                   <p>
-                      Ada Developers Academy (ADA) is an intensive software developer training school for women. ADA's unique year-long program begins with seven months of classroom instruction in cutting-edge web technologies in which students learn the most up-to-date development skills from leading regional and national experts.
-                      After successful completion of the in-class work students are placed in an internship with a Puget Sound tech company where they learn what it's like to be part of a real engineering team shipping production code.
+                      Ada Developers Academy is a nonprofit software development school whose mission is to develop talented women to enter the technology industry.  The program is for individuals who are passionate about starting a career in software development, but do not have a computer science degree or professional coding experience.  Ada's unique year-long program begins with classroom instruction in cutting-edge web technologies. After successful completion of the in-class work, students are placed in an internship with a Puget Sound tech company, where they learn what it's like to be part of a real engineering team shipping production code.
                   </p>
                 </div> <!-- end .col-6 -->
 
@@ -211,11 +221,14 @@
                      <a href="http://www.kalacademy.org/" target="_blank">Kal Academy </a>
                  </h2>
                  <p>
-                     Kal Academy is a non-profit organization passionate about inspiring women to break through barriers and pursue a career in the technology industry. Kal Academy’s founder has more than 20 years experience in the industry. She is also a distinguished faculty member at the University of Washington. After years of teaching at local educational institutions she opened her own academy. The curriculum at Kal Academy was purposely designed to be effective, fast and affordable while still providing students with marketable technical skills. After completing the rigorous course work students have been placed in Fortune 500 technology companies.
+                     Kal Academy is a non-profit organization passionate about inspiring women to break through barriers and pursue a career in the technology industry. Kal Academy’s founder has more than 20 years experience in the industry. She is also a distinguished faculty member distinguished faculty at CityU, Bellevue College and University of Washington. After years of teaching at local educational institutions she opened her own academy. The curriculum at Kal Academy was purposely designed to be effective, fast and affordable while still providing students with marketable technical skills. After completing the rigorous course work students have been placed in Fortune 500 technology companies.
                  </p>
             </div> <!-- end .col-6 -->
         </div>
-        </div>
+
+        <br/>
+        <br/>
+
         <!-- Footer -->
         <nav class="navbar navbar-inverse navbar-bottom">
           <div class="container-fluid">
@@ -238,12 +251,53 @@
         </nav>
         <!--Footer-->
 
-
+    </div>
     <!-- /.container -->
 
             <!-- jQuery -->
-            <script src="/scripts/libraries/jquery.js"></script>
+            <script src="/scripts/jquery-2.1.4.min.js"></script>
             <!-- Bootstrap Core JavaScript -->
             <script src="/scripts/libraries/bootstrap.min.js"></script>
+            <!-- jQuery Validation-->
+            <script src="/scripts/jquery.validate.js"></script>
+            <script src="/scripts/jquery.validate-vsdoc.js"></script>
+
+            <script type="text/javascript">
+                $("#formparticipant").submit(function () {
+
+                    var organization_name = $("#orgname").val();
+                    var contact_name = $("#contactname").val();
+                    var email = $("#email").val();
+                    var website = $("#website").val();
+
+                    $.ajax({
+                        type: "POST",
+                        url: "http://ieapifinal.azurewebsites.net/api/partners",
+                        data: {
+                            "organization_name": organization_name,
+                            "contact_name": contact_name,
+                            "email": email,
+                            "website": website
+                        },
+                        contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                        dataType: "json",
+                        crossDomain: true,
+                        success: function(data)
+                        {
+                            // Hide the modal
+                            $("#myModalHorizontal").modal('hide');
+                        },
+                        failure: function (response) {
+                            alert("Sign Up Error. Please try to sign up again.");
+                        },
+                        error: function (xhr, textStatus, errorThrown) {
+                            alert("Sign Up Error. Please try to sign up again.");
+                        }
+                    });
+
+                    return false; // avoid to execute the actual submit of the form.
+                });
+            </script>
 </body>
+
 </html>
