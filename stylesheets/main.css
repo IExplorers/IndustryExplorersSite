@@ -1,9 +1,5 @@
-#illustration {
-    text-position: center;
-    background-color: rgb(109, 194, 233);
-    height: 450px;
-    width: auto;
-
+html * {
+    font-family: 'Segoe', sans-serif;
 }
 
 .navbar {
@@ -33,65 +29,92 @@ p {
     font-size: 14px;
 }
 
-#illustration h1 {
-   color: white;
-   text-align:center;
-   padding-top: 20px;
-   font-size: 60px;
-}
-
-#illustration img {
+.col-centered {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.container-fluid {
+    margin: 0 auto;
+    padding: 0;
+}
+
+#index-heading {
+    background-color: rgb(109, 194, 233);
+    height: 600px;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+#index-heading h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 300px !important;
+    padding-top: 40px;
+}
+
+#illustration-wrapper {
+    position: absolute;
+    bottom: 0;
+}
+
+#illustration img {
+    width: 100%;
 }
 
 ul.nav.navbar-nav {
     float: right;
 }
 
+#index-well {
+    background-color: rgb(223,223,223);
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+#index-well, p {
+    margin: 0;
+}
+
 .content-wrapper {
     margin: 0;
+    background-color: rgba(92, 45, 145, 0.01);
     width: auto;
     padding: 0 20px 0 20px;
 }
 
 .icon-img {
     float: left;
-    margin-top: 20px;
-    margin-right: 10px;
+    padding-top: 20px;
+    padding-right: 10px;
     clear: both;
+    margin:0;
 }
 
 .icon-content {
-    height: 440px;
-    margin: 20px 0 0 0;
-    overflow: auto;
+    padding: 20px 0 0 0;
     display: block;
+    margin: 0;
+    overflow: auto;
 }
 
 .icon-content p {
     margin: 20px 0 20px 0;
 }
 
-#stats img {
-    padding-top: 20px;
-    display: block;
-    margin-left: auto;
+#stats-wrapper {
+    height: 100%;
+    width: 100%;
     margin-right: auto;
-}
-
-#stats {
-    text-align: center;
+    margin-left: auto;
+    overflow: auto;
 }
 
 .icon-content h2 {
     margin-top: 0px;
-}
-
-.icon-content .btn-default {
-    position: absolute;
-    bottom: 0;
 }
 
 .btn-default {
@@ -190,4 +213,8 @@ margin-top: 5px;
 .copyright{
   font-size: 14px;
   color: #FFFFFF !important;
+}
+
+body > nav.navbar.navbar-inverse.navbar-bottom {
+  margin-top: 20px;
 }
