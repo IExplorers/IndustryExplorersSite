@@ -96,17 +96,13 @@ ul.nav.navbar-nav {
 
 .icon-content {
     padding: 20px 0 0 0;
-    overflow: auto;
     display: block;
     margin: 0;
+    overflow: auto;
 }
 
 .icon-content p {
     margin: 20px 0 20px 0;
-}
-
-#stats {
-    overflow: auto;
 }
 
 #stats-wrapper {
@@ -114,15 +110,7 @@ ul.nav.navbar-nav {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    display: block;
-    overflow: scroll;
-}
-
-#stats img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
+    overflow: auto;
 }
 
 .icon-content h2 {
