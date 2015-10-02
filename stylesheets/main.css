@@ -52,7 +52,7 @@ p {
 #index-heading h1 {
     color: white;
     font-size: 60px;
-    font-weight: 300px !important; 
+    font-weight: 300px !important;
     padding-top: 40px;
 }
 
@@ -87,7 +87,7 @@ ul.nav.navbar-nav {
 }
 
 .icon-img {
-    float: left; 
+    float: left;
     padding-top: 20px;
     padding-right: 10px;
     clear: both;
@@ -110,6 +110,7 @@ ul.nav.navbar-nav {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    overflow: auto;
 }
 
 .icon-content h2 {
@@ -138,6 +139,7 @@ ul.nav.navbar-nav {
 .icon-content h2 {
     margin-top: 0px;
 }
+
 
 ul.nav.navbar-nav {
     float: right;
@@ -212,4 +214,8 @@ margin-top: 5px;
 .copyright{
   font-size: 14px;
   color: #FFFFFF !important;
+}
+
+body > nav.navbar.navbar-inverse.navbar-bottom {
+  margin-top: 20px;
 }
