@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,22 +11,27 @@
 
     <title>Industry Explorers</title>
 
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+
     <!-- Bootstrap Core CSS -->
     <link href="/stylesheets/libraries/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="/stylesheets/libraries/small-business.css" rel="stylesheet">
     <link href="/stylesheets/main.css" rel="stylesheet">
-    <link href="/resources>
+    <link href="/resources">
+    <link href="/resources/fonts">
 
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (config) {
+            function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f; for (s.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) r("track" + i.pop()); return r("setAuthenticatedUserContext"), r("clearAuthenticatedUserContext"), config.disableExceptionTracking || (i = "onerror", r("_" + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t["_" + i](config, r, u, e, o), s }), t
+        }({
+            instrumentationKey: "91fdfdea-4a5a-4f6c-bc1e-5a4f47293a43"
+        });
 
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        window.appInsights = appInsights;
+        appInsights.trackPageView();
+    </script>
 
 </head>
 
