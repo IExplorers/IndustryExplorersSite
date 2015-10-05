@@ -89,7 +89,7 @@ ul.nav.navbar-nav {
 .index-wrapper {
     background-color: rgb(253, 252, 253);
     width: auto;
-    padding: 0 20px 75px 20px;
+    padding: 0 20px 85px 20px;
 }
 
 .icon-img {
@@ -212,14 +212,9 @@ blockquote cite {
     color:#337ab7;
 }
 
-.copyright{
-    font-size: 14px;
-    color: #FFFFFF !important;
-}
-
 .content-wrapper {
     min-height: 100%;
-    padding-bottom: 75px;
+    padding-bottom: 85px;
 }
 
 
@@ -227,10 +222,10 @@ blockquote cite {
     background-color: #e3e3e3;
     color: rgb(255,255,255); 
     position: relative;
-    margin-top: -60px;
-    height: 60px;
+    margin-top: -75px;
+    height: 75px;
     clear: both;
-    padding: 20px 0 0 0;
+    padding: 20px 15px 0 15px;
 }
 
 #about-foot {
@@ -243,5 +238,9 @@ blockquote cite {
 }
 
 #footer-links span {
-    padding-right: 15px;
+    padding-right: 5px;
+}
+
+.footer .row {
+    padding: 0 20px 0 20px;
 }
