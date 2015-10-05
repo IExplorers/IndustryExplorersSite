@@ -90,7 +90,7 @@ ul.nav.navbar-nav {
 .index-wrapper {
     background-color: rgb(253, 252, 253);
     width: auto;
-    padding: 0 20px 40px 20px;
+    padding: 0 20px 75px 20px;
 }
 
 .icon-img {
@@ -219,26 +219,36 @@ blockquote cite {
 }
 
 .content-wrapper {
-    width: auto;
     min-height: 100%;
+    padding-bottom: 75px;
 }
 
 #footer-wrapper {
     min-height: 100%;
+    margin: 0;
+    width: 100%;
 }
 
 .footer {
     background-color: rgb(223,223,223);
-    color: #333; 
+    color: rgb(255,255,255); 
     position: relative;
-    margin-top: -60px;
+    margin: -60px 0 0 0;
     height: 60px;
     clear: both;
     padding-top: 20px;
+    width: 100%;
 }
 
 #about-foot {
-   padding-left: 15px;
-   padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
+#footer-links {
+    float: right;
+}
+
+#footer-links span {
+    padding-right: 15px;
+}
