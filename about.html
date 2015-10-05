@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,22 +11,27 @@
 
     <title>Industry Explorers</title>
 
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+
     <!-- Bootstrap Core CSS -->
     <link href="/stylesheets/libraries/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="/stylesheets/libraries/small-business.css" rel="stylesheet">
     <link href="/stylesheets/main.css" rel="stylesheet">
-    <link href="/resources>
+    <link href="/resources">
+    <link href="/resources/fonts">
 
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (config) {
+            function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f; for (s.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) r("track" + i.pop()); return r("setAuthenticatedUserContext"), r("clearAuthenticatedUserContext"), config.disableExceptionTracking || (i = "onerror", r("_" + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t["_" + i](config, r, u, e, o), s }), t
+        }({
+            instrumentationKey: "91fdfdea-4a5a-4f6c-bc1e-5a4f47293a43"
+        });
 
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        window.appInsights = appInsights;
+        appInsights.trackPageView();
+    </script>
 
 </head>
 
@@ -73,7 +78,7 @@
             <div class="col-lg-7">
                 <img class="img-responsive pull left" src="resources/about-splash.png" />
                 <blockquote>
-                    <p>&nbsp The only impossible journey is one you never begin. &nbsp</p>
+                    <p>&nbsp The only impossible journey is the one you never begin. &nbsp</p>
                     <cite>Anthony Robbins</cite>
                 </blockquote>
             </div>
@@ -159,26 +164,26 @@
         </div>
     </div>
     <!-- /.container -->
-   
+
 <!-- Footer -->
  <footer class="footer">
             <p class="navbar-brand copyright">Copyright &copy; 2015 - Microsoft Corporation - All Rights Reserved.</p>
             <p><div id="footer-links">
               <span>Share On:</span>
               <span><a target="_blank" class="mscom-link socialItemIcon twitter" href="https://twitter.com/share?text=Learn more about the Indu
-stry Explorers program at &url=http://industryexplorer.microsoft.com"><img src="https://c.s-microsoft.com/en-us/CMSImages/twitter_icon.png?vers
+stry Explorers program at &url=http://industryexplorer.azurewebsites.net"><img src="https://c.s-microsoft.com/en-us/CMSImages/twitter_icon.png?vers
 ion=3b7b882c-8ac4-b052-70ba-f2ff1414bfe0" class="mscom-image" alt="Share on Twitter" title="Share on Twitter" width="20" height="17"></a></span
 >
              <span><a target="_blank" class="mscom-link socialItemIcon faceBook" href="https://www.facebook.com/sharer/sharer.php?u=http://indu
 stryexplorer.microsoft.com"><img src="https://c.s-microsoft.com/en-us/CMSImages/facebook_icon.png?version=10638df0-5377-0141-d379-24dbd886ea7f"
  class="mscom-image" alt="Share on Facebook" title="Share on Facebook" width="9" height="18"></a></span>
-            <span><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://industryexplorer.microsoft.com&title=Micosoft Industry Exp
+            <span><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://industryexplorer.azurewebsites.net&title=Micosoft Industry Exp
 lorers&summary=Microsoft Industry Explorers&source=My Website Name" target="_new"> <img src="https://c.s-microsoft.com/en-us/CMSImages/linkedin
 _icon.png?version=806a2655-ccf5-c9f1-74bc-ceed4d5839a5" class="mscom-image" alt="linkedin share button" width="17" height="17" title="Share on
 LinkedIn" /> </a></span>
 </p></div>
                   </footer>
- 
+
     <!-- jQuery -->
     <script src="/scripts/libraries/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->

@@ -11,6 +11,8 @@
 
     <title>Industry Explorers</title>
 
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+
     <!-- Bootstrap Core CSS -->
     <link href="/stylesheets/libraries/bootstrap.min.css" rel="stylesheet">
 
@@ -19,6 +21,17 @@
     <link href="/stylesheets/main.css" rel="stylesheet">
     <link href="/resources">
     <link href="/resources/fonts">
+
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (config) {
+            function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f; for (s.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) r("track" + i.pop()); return r("setAuthenticatedUserContext"), r("clearAuthenticatedUserContext"), config.disableExceptionTracking || (i = "onerror", r("_" + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t["_" + i](config, r, u, e, o), s }), t
+        }({
+            instrumentationKey: "91fdfdea-4a5a-4f6c-bc1e-5a4f47293a43"
+        });
+
+        window.appInsights = appInsights;
+        appInsights.trackPageView();
+    </script>
 
 </head>
 
@@ -95,7 +108,7 @@
 		<p>Industry Explorers is a new program at Microsoft whose mission
 		   is to enrich diversity by embracing different perspectives.
 		   Participants come from many different industries and
-		   professions like psychology, lingusitics, chemistry, industrial
+		   professions like psychology, linguistics, chemistry, industrial
 		   engineering and child care. All, however, share a common passion for
 		   excellence.</p>
 
@@ -134,7 +147,7 @@
 		   in networking, communication, interaction and exchange
 		   of ideas.  Microsoft’s Industry Explorer Program, in partnership
 		   with Ada Developers Academy and Kal Academy, has created a
-		   pipeline to empower individuals with non-traditional backgrounds,
+		   pipeline to empower individuals with non-traditional backgrounds
 		   to excel in the technology field.  If your
 		   company is interested in being on the leading edge of this
 		   initiative, please visit our partner page.</p>
@@ -151,9 +164,9 @@
 	    <p class="navbar-brand copyright">Copyright &copy; 2015 - Microsoft Corporation - All Rights Reserved.</p>
 	    <p><div id="footer-links">
 	      <span>Share On:</span>
-	      <span><a target="_blank" class="mscom-link socialItemIcon twitter" href="https://twitter.com/share?text=Learn more about the Industry Explorers program at &url=http://industryexplorer.microsoft.com"><img src="https://c.s-microsoft.com/en-us/CMSImages/twitter_icon.png?version=3b7b882c-8ac4-b052-70ba-f2ff1414bfe0" class="mscom-image" alt="Share on Twitter" title="Share on Twitter" width="20" height="17"></a></span>
-	     <span><a target="_blank" class="mscom-link socialItemIcon faceBook" href="https://www.facebook.com/sharer/sharer.php?u=http://industryexplorer.microsoft.com"><img src="https://c.s-microsoft.com/en-us/CMSImages/facebook_icon.png?version=10638df0-5377-0141-d379-24dbd886ea7f" class="mscom-image" alt="Share on Facebook" title="Share on Facebook" width="9" height="18"></a></span>
-	    <span><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://industryexplorer.microsoft.com&title=Micosoft Industry Explorers&summary=Microsoft Industry Explorers&source=My Website Name" target="_new"> <img src="https://c.s-microsoft.com/en-us/CMSImages/linkedin_icon.png?version=806a2655-ccf5-c9f1-74bc-ceed4d5839a5" class="mscom-image" alt="linkedin share button" width="17" height="17" title="Share on LinkedIn" /> </a></span>
+	      <span><a target="_blank" class="mscom-link socialItemIcon twitter" href="https://twitter.com/share?text=Learn more about the Industry Explorers program at &url=http://industryexplorer.azurewebsites.net"><img src="https://c.s-microsoft.com/en-us/CMSImages/twitter_icon.png?version=3b7b882c-8ac4-b052-70ba-f2ff1414bfe0" class="mscom-image" alt="Share on Twitter" title="Share on Twitter" width="20" height="17"></a></span>
+	     <span><a target="_blank" class="mscom-link socialItemIcon faceBook" href="https://www.facebook.com/sharer/sharer.php?u=http://industryexplorer.azurewebsites.net"><img src="https://c.s-microsoft.com/en-us/CMSImages/facebook_icon.png?version=10638df0-5377-0141-d379-24dbd886ea7f" class="mscom-image" alt="Share on Facebook" title="Share on Facebook" width="9" height="18"></a></span>
+	    <span><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://industryexplorer.azurewebsites.net&title=Micosoft Industry Explorers&summary=Microsoft Industry Explorers&source=My Website Name" target="_new"> <img src="https://c.s-microsoft.com/en-us/CMSImages/linkedin_icon.png?version=806a2655-ccf5-c9f1-74bc-ceed4d5839a5" class="mscom-image" alt="linkedin share button" width="17" height="17" title="Share on LinkedIn" /> </a></span>
 </p></div>
 	</footer>
       </div>
@@ -161,7 +174,7 @@
     <script src="/scripts/libraries/jquery.js"></script>
     <!-- Add JS file so that older browsers render HTML5 properties -->
     <script type="text/javascript" async="" src="http://stats.g.doubleclick.net/dc.js"></script>
-    
+
     <!-- Bootstrap Core JavaScript -->
     <script src="/scripts/libraries/bootstrap.min.js"></script>
 
