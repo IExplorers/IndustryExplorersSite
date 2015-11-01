@@ -252,3 +252,15 @@ blockquote cite {
 #footer-links span {
     padding-right: 15px;
 }
+
+.form-group .control-label::after {
+  content:"*";
+  color:red;
+}
+
+
+.form-group .control-label-bigger {
+    font-size:21px;
+ 
+}
+
