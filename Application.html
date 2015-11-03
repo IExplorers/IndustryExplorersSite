@@ -103,7 +103,7 @@
         
           
         <!--Form-->
-        <div class="row">
+        <div class="row" id="FormDiv">
             <div class="col-md-2"></div>
             <div class="col-md-8 well">
                
@@ -260,16 +260,21 @@
                             Required Fields <label class='control-label'></label>
                         </div>
 
+                        
 </form>
-
 
             </div>
         </div>
         <!--Form End-->
 
-
-     </div>
-
+        <div class="row" id="successMessageDiv" style="display:none">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 well">
+                Thank you for applying. You have successfully submitted your application. Please <a href="/about.html">refer</a> here for the program information.
+            </div>
+            <div class="col-md-2"> </div>
+        </div>
+       </div>
     <!-- Footer -->
     <footer class="footer">
         <p class="navbar-brand copyright">Copyright &copy; 2015 - Microsoft Corporation - All Rights Reserved.</p>
@@ -319,7 +324,7 @@ LinkedIn" />
         // Check for FileReader API (HTML5) support.
         if (!window.FileReader) {
         alert('This browser does not support the FileReader API.');
-        }
+        }      
         
         var resume = document.getElementById('Resume');
         resume.addEventListener('change', handleFileSelect, false);
@@ -372,8 +377,9 @@ LinkedIn" />
                 data: data,                
                 success: function (data, textStatus, jqXHR) {
                     //Show success message to the user
-                    console.log(data.success);
-                    alert("Success");
+                   
+                    $("#successMessageDiv").css("display", "block");
+                    $("#FormDiv").css("display", "none");
                 },
                 failure: function (response) {
                     alert("Sign Up Error. Please try to apply again.");
