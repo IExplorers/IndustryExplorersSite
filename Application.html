@@ -113,8 +113,8 @@
                         <div class='col-md-12'>
                             <div class="form-group">
                                 <label class='control-label control-label-bigger' for="authorizedtowork">Are you currently authorized to work in the United States? </label>
-                                <input type="radio" name="AuthorizedToWork" value="true">Yes
-                                <input type="radio" name="AuthorizedToWork" value="false" checked="checked">No                       
+                                <input type="radio" name="AuthorizedToWork" id="AuthorizedToWorkYes" value="true">Yes
+                                <input type="radio" name="AuthorizedToWork" id="AuthorizedToWorkNo" value="false">No                       
                             </div>
                         </div>
                     </div>
@@ -320,7 +320,40 @@ LinkedIn" />
 
 
         $(document).ready(function () {
-        
+
+            if ($('#AuthorizedToWorkNo').is(':checked') || $('#AuthorizedToWorkYes').is(':checked'))
+            {
+
+            } else
+            {
+                HideorShowFormFields(true);
+            }
+
+            $("#AuthorizedToWorkNo").on("click", function () {              
+                
+                HideorShowFormFields(true);
+                alert("Thank you for your interest, but at this time, applicants must be authorized to work in the United States");
+
+            });
+            
+            $("#AuthorizedToWorkYes").on("click", function () {
+                
+                HideorShowFormFields(false);
+
+            });
+
+            function HideorShowFormFields(value) {
+            
+                $("input:text").prop('disabled', value);
+                $("#btnSubmit").prop("disabled", value);
+                $("#Email").prop("disabled", value);
+                $("#State").prop("disabled", value);
+                $("#Question1").prop("disabled", value);
+                $("#Question2").prop("disabled", value);
+                $("#Question3").prop("disabled", value);
+                $("#Resume").prop("disabled", value);
+            }
+
         // Check for FileReader API (HTML5) support.
         if (!window.FileReader) {
         alert('This browser does not support the FileReader API.');
