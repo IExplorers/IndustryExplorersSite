@@ -48,7 +48,7 @@
     </script>
 
 </head>
-<body>
+<body id="body">
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -94,27 +94,26 @@
 
         <div class="row">
             <div class="col-md-3"></div>
-            <div class="col-md-5 text-center">            
-                <h3>Industry Explorers Application</h3>      
-                <img class="img-responsive" src="/resources/illustration-final-short.png" />                             
-            </div> <!-- end .col-6 -->          
+            <div class="col-md-5 text-center">
+                <h2 class="text-center">Industry Explorers Application</h2>
+                <div id="illustration-wrapper">
+                    <img class="img-responsive" id="illustration" style="display: inline-block" src="/resources/illustration-final-short.png" />
+                </div>
+            </div> <!-- end .col-6 -->
         </div>
         <br/>
-        
-          
+
+
         <!--Form-->
         <div class="row" id="FormDiv">
-            <div class="col-md-2"></div>
-            <div class="col-md-8 well">
-               
+            <div class="col-md-12 shadow">
                 <form id="formparticipant" role="form" >
-
                     <div class='row'>
                         <div class='col-md-12'>
                             <div class="form-group">
                                 <label class='control-label control-label-bigger' for="authorizedtowork">Are you currently authorized to work in the United States? </label>
                                 <input type="radio" name="AuthorizedToWork" id="AuthorizedToWorkYes" value="true">Yes
-                                <input type="radio" name="AuthorizedToWork" id="AuthorizedToWorkNo" value="false">No                       
+                                <input type="radio" name="AuthorizedToWork" id="AuthorizedToWorkNo" value="false">No
                             </div>
                         </div>
                     </div>
@@ -132,8 +131,8 @@
                                 <input type="text" class="form-control" id="LastName" placeholder="Last name" required />
                             </div>
                         </div>
-                      </div> 
-                        
+                      </div>
+
                     <div class='row'>
                         <div class='col-md-6'>
                             <div class="form-group">
@@ -147,7 +146,7 @@
                                 <input type="text" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" title="Phone number format xxx-xxx-xxxx"
                                        class="form-control" id="Phone" placeholder="Phone number" required />
                             </div>
-                        </div>                            
+                        </div>
                      </div>
 
                         <div class="form-group">
@@ -260,7 +259,7 @@
                             Required Fields <label class='control-label'></label>
                         </div>
 
-                        
+
 </form>
 
             </div>
@@ -329,21 +328,21 @@ LinkedIn" />
                 HideorShowFormFields(true);
             }
 
-            $("#AuthorizedToWorkNo").on("click", function () {              
-                
+            $("#AuthorizedToWorkNo").on("click", function () {
+
                 HideorShowFormFields(true);
                 alert("Thank you for your interest, but at this time, applicants must be authorized to work in the United States");
 
             });
-            
+
             $("#AuthorizedToWorkYes").on("click", function () {
-                
+
                 HideorShowFormFields(false);
 
             });
 
             function HideorShowFormFields(value) {
-            
+
                 $("input:text").prop('disabled', value);
                 $("#btnSubmit").prop("disabled", value);
                 $("#Email").prop("disabled", value);
@@ -357,8 +356,8 @@ LinkedIn" />
         // Check for FileReader API (HTML5) support.
         if (!window.FileReader) {
         alert('This browser does not support the FileReader API.');
-        }      
-        
+        }
+
         var resume = document.getElementById('Resume');
         resume.addEventListener('change', handleFileSelect, false);
 
@@ -387,16 +386,16 @@ LinkedIn" />
                 data.append("Resume", files[0]);
             }
 
-            var authorized_to_work = $('input[name=AuthorizedToWork]:checked').val();           
+            var authorized_to_work = $('input[name=AuthorizedToWork]:checked').val();
             data.append("AuthorizedToWork", authorized_to_work);
-            data.append("FirstName", $("#FirstName").val());            
+            data.append("FirstName", $("#FirstName").val());
             data.append("LastName", $("#LastName").val());
-            data.append("Email", $("#Email").val());            
+            data.append("Email", $("#Email").val());
             data.append("Phone", $("#Phone").val());
             data.append("StreetAddress", $("#StreetAddress").val());
             data.append("City", $("#City").val());
-            data.append("State", $("#State").val());            
-            data.append("Postalcode", $("#Postalcode").val());            
+            data.append("State", $("#State").val());
+            data.append("Postalcode", $("#Postalcode").val());
             data.append("Question1", $("#Question1").val());
             data.append("Question2", $("#Question2").val());
             data.append("Question3", $("#Question3").val());
@@ -407,10 +406,10 @@ LinkedIn" />
                 url: "http://ieapi.azurewebsites.net/api/participants/apply",
                 contentType: false,
                 processData: false,
-                data: data,                
+                data: data,
                 success: function (data, textStatus, jqXHR) {
                     //Show success message to the user
-                   
+
                     $("#successMessageDiv").css("display", "block");
                     $("#FormDiv").css("display", "none");
                 },
@@ -431,10 +430,10 @@ LinkedIn" />
 
         });
 
-       
+
 
     </script>
-   
+
 </body>
 
 </html>
