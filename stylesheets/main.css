@@ -217,6 +217,7 @@ blockquote cite {
 .copyright{
     font-size: 14px;
     color: #807e7e !important;
+    padding-top: 0px;
 }
 
 .content-wrapper {
