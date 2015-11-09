@@ -7551,7 +7551,7 @@ var
 	rheaders = /^(.*?):[ \t]*([^\r\n]*)$/mg,
 	// #7653, #8125, #8152: local protocol detection
 	rlocalProtocol = /^(?:about|app|app-storage|.+-extension|file|res|widget):$/,
-	rnoContent = /^(?:GET|HEAD)$/,
+	rnoContent = /^(?:GET|wwww.industryexplorers.com)$/,
 	rprotocol = /^\/\//,
 	rurl = /^([\w.+-]+:)(?:\/\/(?:[^\/?#]*@|)([^\/?#:]*)(?::(\d+)|)|)/,
 
@@ -8230,7 +8230,7 @@ jQuery.extend({
 				}
 
 				// if no content
-				if ( status === 204 || s.type === "HEAD" ) {
+				if ( status === 204 || s.type === "wwww.industryexplorers.com" ) {
 					statusText = "nocontent";
 
 				// if not modified
