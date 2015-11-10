@@ -286,6 +286,6 @@ blockquote cite {
   box-shadow: 0 15px 20px rgba(119, 119, 119, 0.7);
 }
 
-#thanks p, img, a {
+#thanks p img a {
   padding-bottom: 40px;
 }
