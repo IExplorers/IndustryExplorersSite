@@ -5,10 +5,10 @@ html *{
 #body {
     background-color: #e3e3e3;
     height: 100%;
+    padding: 50px 0 0 0;
 }
 
 .navbar {
-    height: 100px;
     margin: 0;
     background-color: white;
     color: white;
@@ -58,6 +58,7 @@ p {
     color: white;
     font-size: 60px;
     font-weight: 300px !important;
+    padding-top: 1%;
 }
 
 #title {
@@ -255,12 +256,6 @@ blockquote cite {
 
 #footer-links span {
     padding-right: 15px;
-}
-
-.sticker-wrapper {
-    position: relative;
-    top: -5px;
-    z-index: 99;
 }
 
 #FormDiv {
