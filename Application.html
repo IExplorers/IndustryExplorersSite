@@ -105,9 +105,11 @@
 
 
         <!--Form-->
+
         <div class="row" id="FormDiv">
             <div class="col-md-12 shadow">
-                <form id="formparticipant" role="form" >
+                <form id="formparticipant" role="form" method="POST" action="http://formspree.io/anne.kimsey@gmail.com">
+
                     <div class='row'>
                         <div class='col-md-12'>
                             <div class="form-group">
@@ -122,13 +124,13 @@
                         <div class='col-md-6'>
                             <div class="form-group">
                                 <label class='control-label' for="FirstName">First Name</label>
-                                <input type="text" class="form-control" id="FirstName" placeholder="First name" required />
+                                <input type="text" class="form-control" id="FirstName" placeholder="First name" name="First Name" required />
                             </div>
                         </div>
                         <div class='col-md-6'>
                             <div class="form-group">
                                 <label class='control-label' for="LastName">Last Name</label>
-                                <input type="text" class="form-control" id="LastName" placeholder="Last name" required />
+                                <input type="text" class="form-control" id="LastName" placeholder="Last name" name="Last Name"required />
                             </div>
                         </div>
                       </div>
@@ -137,34 +139,34 @@
                         <div class='col-md-6'>
                             <div class="form-group">
                                 <label for="Email" class='control-label'>Email</label>
-                                <input type="email" class="form-control" id="Email" placeholder="Email" required />
+                                <input type="email" class="form-control" id="Email" placeholder="Email" name="_replyto" required />
                             </div>
                         </div>
                         <div class='col-md-6'>
                             <div class="form-group">
                                 <label for="Phone" class='control-label'>Phone Number</label>
-                                <input type="text" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" title="Phone number format xxx-xxx-xxxx"
-                                       class="form-control" id="Phone" placeholder="Phone number" required />
+                                <input type="text" title=""
+                                       class="form-control" id="Phone" placeholder="Phone number" name="Phone number" required />
                             </div>
                         </div>
                      </div>
 
                         <div class="form-group">
                             <label for="StreetAddress" class='control-label'>Address</label>
-                            <input type="text" class="form-control" id="StreetAddress" placeholder="Address" required />
+                            <input type="text" class="form-control" id="StreetAddress" placeholder="Address" name="Address" required />
                         </div>
 
                         <div class='row'>
                             <div class='col-md-4'>
                                 <div class="form-group">
                                     <label for="City" class='control-label'>City</label>
-                                    <input type="text" class="form-control" id="City" placeholder="City" required />
+                                    <input type="text" class="form-control" id="City" placeholder="City" name="City" required />
                                 </div>
                             </div>
                             <div class='col-md-4'>
                                 <div class="form-group">
                                     <label for="State" class='control-label'>State</label>
-                                    <select class="form-control" id="State" required>
+                                    <select class="form-control" id="State" name="State" required>
                                         <option value="">Select State</option>
                                         <option value="AL">Alabama</option>
                                         <option value="AK">Alaska</option>
@@ -223,37 +225,41 @@
                             <div class='col-md-4'>
                                 <div class="form-group">
                                     <label for="Postalcode" class='control-label'>Postal code</label>
-                                    <input class="form-control" id="Postalcode" placeholder="Postal code" pattern="^\d{5}$" title="Postal Code xxxxx" type="text" required />
+                                    <input class="form-control" id="Postalcode" placeholder="Postal code" pattern="^\d{5}$" title="Postal Code xxxxx" type="text" name="zip" required />
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="Question1" class='control-label'>Why are you interested in programming?</label>
-                            <textarea class="form-control" rows="5" id="Question1" maxlength="400" required></textarea>
+                            <textarea class="form-control" rows="5" id="Question1" maxlength="400" name="Q1" required></textarea>
                             <span class="help-block">Maximum of 400 characters.</span>
                         </div>
 
                         <div class="form-group">
                             <label for="Question2" class='control-label'>What have you done to expose yourself to programming so far?</label>
-                            <textarea class="form-control" rows="5" id="Question2" maxlength="400" required></textarea>
+                            <textarea class="form-control" rows="5" id="Question2" name="Q2" maxlength="400" required></textarea>
                             <span class="help-block">Maximum of 400 characters.</span>
                         </div>
 
                         <div class="form-group">
                             <label for="Question3" class='control-label'>Why are you interested in working at Microsoft?</label>
-                            <textarea class="form-control" rows="5" id="Question3" maxlength="400" required></textarea>
+                            <textarea class="form-control" rows="5" id="Question3" maxlength="400" name="Q3" required></textarea>
                             <span class="help-block">Maximum of 400 characters.</span>
                         </div>
 
                         <div class="form-group">
-                            <label for="Resume" class='control-label'>Upload Resume</label>
-                            <input id="Resume" name="Resume" type="file" required/>
-                            <span class="help-block">Word Doc or PDF file Preferred. Maximum file size: 4MB.</span>
+                            <label for="Resume" class='control-label'>Resume</label>
+                            <input id="Resume" name="Resume" type="text" required/>
+                            <span class="help-block">Please format your resume in <a href="https://daringfireball.net/projects/markdown"/>Markdown</a>, HTML or any other markup language and submit as a link to a <a href="https://gist.github.com/">GitHub Gist</a>.</span>
                             <output id="list"></output>
                         </div>
 
-                        <button type="submit" id="btnSubmit" class="btn btn-primary">Submit</button>
+                        <input type="hidden" name="_next" value="/thanks.html"/>
+                        <input type="hidden" name="_subject" value="New Industry Explorers Application" />
+                        <input type="text" name="_gotcha" style="display:none" />
+
+                        <button type="submit" id="btnSubmit" class="btn btn-primary" value="Send">Submit</button>
 
                         <div class="form-group">
                             Required Fields <label class='control-label'></label>
