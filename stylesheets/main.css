@@ -58,7 +58,7 @@ p {
     color: white;
     font-size: 60px;
     font-weight: 300px !important;
-    padding-top: 1%;
+    padding-top: 4%;
 }
 
 #title {
@@ -88,7 +88,7 @@ ul.nav.navbar-nav {
 .index-wrapper {
     background-color: rgb(253, 252, 253);
     width: auto;
-    padding: 60px 20px 60px 20px;
+    padding: 60px 20px 80px 20px;
 }
 
 .icon-img {
@@ -100,10 +100,11 @@ ul.nav.navbar-nav {
 }
 
 .icon-content {
-    padding: 20px 0 40px 0;
+    padding: 20px 0 20px 0;
     display: block;
     margin: 0;
     overflow: auto;
+    min-height: 100%;
 }
 
 .icon-content p {
@@ -119,7 +120,6 @@ ul.nav.navbar-nav {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    overflow: auto;
     padding-top: 20px;
 }
 
@@ -224,7 +224,8 @@ blockquote cite {
 .content-wrapper {
     min-height: 100%;
     min-width: 100%;
-    padding: 80px 15% 200px;
+    padding: 80px 15% 200px 15%;
+    overflow: auto;
     background-color: rgb(253, 252, 253)
 }
 
@@ -238,7 +239,7 @@ blockquote cite {
     background-color: #e3e3e3;
     color: #807e7e;
     position: relative;
-    margin: -80px 0 0 0;
+    margin: 0;
     height: 80px;
     padding-top: 20px;
     width: 100%;
@@ -286,6 +287,15 @@ blockquote cite {
   box-shadow: 0 15px 20px rgba(119, 119, 119, 0.7);
 }
 
-#thanks p, img, a {
-  padding-bottom: 40px;
+.thanks {
+  min-height: 600px;
+  padding: 10% 0 20% 0;
+}
+
+.thanks p {
+    padding: 20px 0 40px;
+}
+
+.thanks h3 {
+    padding-bottom: 40px;
 }
