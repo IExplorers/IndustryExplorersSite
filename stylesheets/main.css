@@ -241,7 +241,7 @@ blockquote cite {
     position: relative;
     margin: 0;
     height: 80px;
-    padding-top: 20px;
+    padding-top: 1%;
     width: 100%;
     overflow: hidden;
 }
@@ -287,6 +287,7 @@ blockquote cite {
   box-shadow: 0 15px 20px rgba(119, 119, 119, 0.7);
 }
 
+
 .thanks {
   min-height: 600px;
   padding: 10% 0 20% 0;
@@ -298,4 +299,8 @@ blockquote cite {
 
 .thanks h3 {
     padding-bottom: 40px;
+}
+
+#thanks  img {
+  padding-bottom: 40px;
 }
