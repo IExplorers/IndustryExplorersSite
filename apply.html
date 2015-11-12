@@ -218,19 +218,19 @@
                 <div class="form-group">
                     <label for="Question1" class='control-label'>Why are you interested in programming?</label>
                     <textarea class="form-control" rows="5" id="Question1" maxlength="2500" name="Q1" required></textarea>
-                    <span class="help-block">2500 character (~ 400 word) maximum</span>
+		    <span class="help-block1">2500 character (~ 400 word) maximum</span>
                 </div>
 
                 <div class="form-group">
                     <label for="Question2" class='control-label'>What have you done to expose yourself to programming so far?</label>
                     <textarea class="form-control" rows="5" id="Question2" name="Q2" maxlength="2500" required></textarea>
-                    <span class="help-block">2500 character (~ 400 word) maximum</span>
+                    <span class="help-block2">2500 character (~ 400 word) maximum</span>
                 </div>
 
                 <div class="form-group">
                     <label for="Question3" class='control-label'>Why are you interested in working at Microsoft?</label>
                     <textarea class="form-control" rows="5" id="Question3" maxlength="2500" name="Q3" required></textarea>
-                    <span class="help-block">2500 character (~ 400 word) maximum</span>
+                    <span class="help-block3">2500 character (~ 400 word) maximum</span>
                 </div>
 
                 <div class="form-group">
@@ -302,7 +302,7 @@
             $("#AuthorizedToWorkNo").on("click", function () {
 
                 HideorShowFormFields(true);
-                alert("Thank you for your interest, but at this time, applicants must be authorized to work in the United States");
+                alert("Thank you for your interest, but at this time applicants must be authorized to work in the United States");
 
             });
 
@@ -323,9 +323,57 @@
                 $("#Question3").prop("disabled", value);
                 $("#Resume").prop("disabled", value);
             }
+        
+            var text_max = 2500;
+            $('.help-block1').html(text_max + ' characters remaining');
+            $('.help-block2').html(text_max + ' characters remaining');
+            $('.help-block3').html(text_max + ' characters remaining');
+ 
+                        
+            $('#Question1').keyup(function() {
+                $('Question1').border-color = #dddddd;
+                $('input[type="submit"]').prop('disabled', false); 
+                var text_length = $('#Question1').val().length;
+                var text_remaining = text_max - text_length;
 
+                $('.help-block1').html(text_remaining + ' characters remaining');
+                if (text_remaining === 0) {
+                    $(#'Question1').border-color = red;
+                    $('input[type="submit"]').prop('disabled', true);
+                }              
+            }) 
+            
+            $('#Question2').keyup(function() {
+                $('Question2').border-color = #dddddd;
+                $('input[type="submit"]').prop('disabled', false);         
+                var text_length = $('#Question2').val().length;
+                var text_remaining = text_max - text_length;
+
+                $('.help-block2').html(text_remaining + ' characters remaining');
+                if (text_remaining === 0) {
+                    $(#'Question2').border-color = red;
+                    $('input[type="submit"]').prop('disabled', true);
+                } 
+            }) 
+       
+            $('#Question3').keyup(function() {
+                $('Question3').border-color = #dddddd;
+                $('input[type="submit"]').prop('disabled', false); 
+                var text_length = $('#Question3').val().length;
+                var text_remaining = text_max - text_length;
+
+                $('.help-block3').html(text_remaining + ' characters remaining');
+                if (text_remaining === 0) {
+                    $(#'Question3').border-color = red;
+                    $('input[type="submit"]').prop('disabled', true);
+                }            
+           }) 
+        
+ 
+       
         // Check for FileReader API (HTML5) support.
         if (!window.FileReader) {
+
         alert('This browser does not support the FileReader API.');
         }
 
