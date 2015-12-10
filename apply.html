@@ -107,7 +107,7 @@
         <!--Form-->
 
         <div class="shadow" id="FormDiv">
-            <form class="form-horizontal" id="formparticipant" role="form" method="POST" action="http://formspree.io/explorers@microsoft.com">
+            <form class="form-horizontal" id="formparticipant" role="form">
 
                 <div class="form-group">
                     <label class="control-label control-label-bigger" for="authorizedtowork">Are you currently authorized to work in the United States? </label>
@@ -138,7 +138,7 @@
 
                 <div class="form-group">
                     <label for="Phone" class='control-label'>Phone Number</label>
-                    <input type="text" title=""
+                    <input type="text" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" title="Phone number format xxx-xxx-xxxx"
                             class="form-control" id="Phone" placeholder="Phone number" name="Phone number" required />
                 </div>
 
@@ -216,6 +216,68 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="CodingAcademy" class='control-label'>Coding academy where you have learned software development skills</label>
+                    <select class="form-control" id="CodingAcademy" name="CodingAcademy" required>
+                        <option value="">Select Academy</option>
+                        <option value="Other">--Other--</option>
+                        <option value="None">--None--</option>
+                        <option value="Ada Academy">Ada Academy</option>
+                        <option value="Anyone Can Learn To Code">Anyone Can Learn To Code</option>
+                        <option value="App Academy">App Academy</option>
+                        <option value="Apprentice">Apprentice</option>
+                        <option value="Betamore">Betamore</option>
+                        <option value="Byte Academy">Byte Academy</option>
+                        <option value="Code Chicago">Code Chicago</option>
+                        <option value="CoderCamps">CoderCamps</option>
+                        <option value="Coder Foundry">Coder Foundry</option>
+                        <option value="CodeUp">CodeUp</option>
+                        <option value="Coding Campus">Coding Campus</option>
+                        <option value="Coding Dojo">Coding Dojo</option>
+                        <option value="Concordia Coding Bootcamp">Concordia Coding Bootcamp</option>
+                        <option value="Craftsmanship Academy">Craftsmanship Academy</option>
+                        <option value="DaVinci coders">DaVinci coders</option>
+                        <option value="DevLeague">DevLeague</option>
+                        <option value="DevMountain">DevMountain</option>
+                        <option value="Epicodus">Epicodus</option>
+                        <option value="Fire BootCamp">Fire BootCamp</option>
+                        <option value="The Flatiron School">The Flatiron School</option>
+                        <option value="Galvanize">Galvanize</option>
+                        <option value="General Assembly">General Assembly</option>
+                        <option value="Hackbright Academy">Hackbright Academy</option>
+                        <option value="The Iron Yard">The Iron Yard</option>
+                        <option value="Iron Hack">Iron Hack</option>
+                        <option value="Kal Academy">Kal Academy</option>
+                        <option value="LearnTech Labs">LearnTech Labs</option>
+                        <option value="Learning Fuze">Learning Fuze</option>
+                        <option value="Maker Square">Maker Square</option>
+                        <option value="Mobile Makers Academy">Mobile Makers Academy</option>
+                        <option value="Nashville Software School">Nashville Software School</option>
+                        <option value="New York Coder & Design Academy">New York Coder & Design Academy</option>
+                        <option value="Omaha Code School">Omaha Code School</option>
+                        <option value="Portland Code School">Portland Code School</option>
+                        <option value="Recurse Center">Recurse Center</option>
+                        <option value="Refactor U">Refactor U</option>
+                        <option value="RocketIt Bootcamp">RocketIt Bootcamp</option>
+                        <option value="Sabio">Sabio</option>
+                        <option value="Software Craftmanship Guild">Software Craftmanship Guild</option>
+                        <option value="Starter League">Starter League</option>
+                        <option value="Startup Institute">Startup Institute</option>
+                        <option value="The Tech Academy">The Tech Academy</option>
+                        <option value="Tech Talent South">Tech Talent South</option>
+                        <option value="Turn To Tech">Turn To Tech</option>
+                        <option value="We Can Code It">We Can Code It</option>
+                        <option value="Wyncode">Wyncode</option>                   
+                       
+                    </select>
+                   
+                </div>
+
+                <div id ="OtherCodingAcademyDiv" class="form-group">
+                    <label for="OtherCodingAcademy" class='control-label'>Please enter the coding academy</label>
+                    <input class="form-control" id="OtherCodingAcademy" placeholder="Coding Academy" type="text" name="OtherCodingAcademy"/>
+                </div>
+
+                <div class="form-group">
                     <label for="Question1" class='control-label'>Why are you interested in programming?</label>
                     <textarea class="form-control" rows="5" id="Question1" maxlength="2500" name="Q1" required></textarea>
 		    <span class="help-block1">2500 character (~ 400 word) maximum</span>
@@ -230,16 +292,11 @@
                 <div class="form-group">
                     <label for="Resume" class='control-label'>Resume</label>
                     <input id="Resume" name="Resume" type="text" required />
-                    <span class="help-block">Please format your resume in <a href="https://daringfireball.net/projects/markdown" />Markdown</a>, HTML or any other markup language and submit as a link to a <a href="https://gist.github.com/">GitHub Gist</a>.</span>
-                    <output id="list"></output>
-                </div>
-
-                <input type="hidden" name="_next" value="/thanks.html" />
-                <input type="hidden" name="_subject" value="New Industry Explorers Application" />
-                <input type="text" name="_gotcha" style="display:none" />
+                    <span class="help-block">Please format your resume in <a href="https://daringfireball.net/projects/markdown" target="_blank">Markdown</a> or any other markup language and submit as a link to a <a href="https://gist.github.com/" target="_blank">GitHub Gist</a>.</span>
+                </div>              
 
                 <div class="form-group">
-                    <button type="submit" id="btnSubmit" class="btn btn-primary" value="Send">Submit</button>
+                    <button type="submit" id="btnSubmit" class="btn btn-primary">Submit</button>
                 </div>
 
                 <div class="form-group">
@@ -249,14 +306,7 @@
             </form>
         </div>
         <!--Form End-->
-
-        <div class="row" id="successMessageDiv" style="display:none">
-           <div class="col-md-2"></div>
-            <div class="col-md-8 well">
-                Thank you for applying. You have successfully submitted your application. Please <a href="/about.html">refer</a> here for the program information.
-            </div>
-            <div class="col-md-2"> </div>
-        </div>
+       
        </div>
        <!-- Footer -->
     <footer class="footer">
@@ -284,6 +334,8 @@
 
 
         $(document).ready(function () {
+                       
+            $("#OtherCodingAcademyDiv").hide();
 
             if ($('#AuthorizedToWorkNo').is(':checked') || $('#AuthorizedToWorkYes').is(':checked'))
             {
@@ -306,6 +358,20 @@
 
             });
 
+            $('#CodingAcademy').on('change', function (e) {
+                var optionSelected = $("option:selected", this);
+                var valueSelected = this.value;
+                if(valueSelected == 'Other')
+                {
+                    $("#OtherCodingAcademyDiv").show();
+                }
+                else
+                {
+                    $("#OtherCodingAcademyDiv").hide();
+                }
+            });
+
+
             function HideorShowFormFields(value) {
 
                 $("input:text").prop('disabled', value);
@@ -313,9 +379,9 @@
                 $("#Email").prop("disabled", value);
                 $("#State").prop("disabled", value);
                 $("#Question1").prop("disabled", value);
-                $("#Question2").prop("disabled", value);
-                $("#Question3").prop("disabled", value);
+                $("#Question2").prop("disabled", value);               
                 $("#Resume").prop("disabled", value);
+                $("#CodingAcademy").prop("disabled", value);
             }
         
             var text_max = 2500;
@@ -338,73 +404,43 @@
                 $('.help-block2').html(text_remaining + ' characters remaining');
             })         
  
-           $('#Question3').keyup(function() {
-                var text_length = $('#Question3').val().length;
-                var text_remaining = text_max - text_length;
+             
 
-                $('.help-block3').html(text_remaining + ' characters remaining');
-            }) 
-       
-        // Check for FileReader API (HTML5) support.
-        if (!window.FileReader) {
+           $("#formparticipant").submit(function () {
 
-        alert('This browser does not support the FileReader API.');
-        }
-
-        var resume = document.getElementById('Resume');
-        resume.addEventListener('change', handleFileSelect, false);
-
-        function handleFileSelect(evt) {
-            var files = evt.target.files; // FileList object
-
-            // files is a FileList of File objects. List some properties.
-            var output = [];
-            for (var i = 0, f; f = files[i]; i++) {
-                output.push('<li><strong>', escape(f.name), '</strong> (', f.type || 'n/a', ') - ',
-                            f.size, ' bytes, last modified: ',
-                            f.lastModifiedDate ? f.lastModifiedDate.toLocaleDateString() : 'n/a',
-                            '</li>');
-            }
-            document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
-        }
-
-        $("#formparticipant").submit(function () {
-
-            var data = new FormData();
-
-            var files = $("#Resume").get(0).files;
-
-            // Add the uploaded image content to the form data collection
-            if (files.length > 0) {
-                data.append("Resume", files[0]);
-            }
-
-            var authorized_to_work = $('input[name=AuthorizedToWork]:checked').val();
-            data.append("AuthorizedToWork", authorized_to_work);
-            data.append("FirstName", $("#FirstName").val());
-            data.append("LastName", $("#LastName").val());
-            data.append("Email", $("#Email").val());
-            data.append("Phone", $("#Phone").val());
-            data.append("StreetAddress", $("#StreetAddress").val());
-            data.append("City", $("#City").val());
-            data.append("State", $("#State").val());
-            data.append("Postalcode", $("#Postalcode").val());
-            data.append("Question1", $("#Question1").val());
-            data.append("Question2", $("#Question2").val());
-            data.append("Question3", $("#Question3").val());
+               var codingAcademyValue = $("#CodingAcademy").val();
+             
+               //If other coding academy is selected, then get the value from the text box.
+               if (codingAcademyValue == 'Other') {
+                   codingAcademyValue = $("#OtherCodingAcademy").val();
+               }
+              
 
              //Make Ajax request with the contentType = false, and procesDate = false
             var ajaxRequest = $.ajax({
                 type: "POST",
-                url: "http://ieapi.www.industryexplorers.com.net/api/participants/apply",
-                contentType: false,
-                processData: false,
-                data: data,
+                url: "https://ieapi.azurewebsites.net/api/participants",
+                data: {
+                    "AuthorizedToWork" : $('input[name=AuthorizedToWork]:checked').val(),
+                    "FirstName" : $("#FirstName").val(),
+                    "LastName" : $("#LastName").val(),
+                    "Email" : $("#Email").val(),
+                    "Phone" : $("#Phone").val(),
+                    "StreetAddress" : $("#StreetAddress").val(),
+                    "City" : $("#City").val(),
+                    "State" : $("#State").val(),
+                    "Postalcode" : $("#Postalcode").val(),
+                    "Question1" : $("#Question1").val(),
+                    "Question2" : $("#Question2").val(),         
+                    "ResumeUrl": $("#Resume").val(),
+                    "Organization": codingAcademyValue
+                },
+                contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                dataType: "json",
+                crossDomain: true,
                 success: function (data, textStatus, jqXHR) {
                     //Show success message to the user
-
-                    $("#successMessageDiv").css("display", "block");
-                    $("#FormDiv").css("display", "none");
+                    window.location.replace("/thanks.html");
                 },
                 failure: function (response) {
                     alert("Submission Error");
