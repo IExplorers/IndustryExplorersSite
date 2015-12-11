@@ -11,7 +11,7 @@
 
     <title>Industry Explorers</title>
 
-    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ > 
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
 
     <!-- Bootstrap Core CSS -->
     <link href="/stylesheets/libraries/bootstrap.min.css" rel="stylesheet">
@@ -22,21 +22,6 @@
     <link href="/resources">
     <link href="/resources/fonts">
 
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src=" https//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!--
-    To collect end-user usage analytics about your application,
-    insert the following script into each page you want to track.
-    Place this code immediately before the closing </head> tag,
-    and before any other scripts. Your first data will appear
-    automatically in just a few seconds.
-    -->
     <script type="text/javascript">
         var appInsights = window.appInsights || function (config) {
             function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f; for (s.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) r("track" + i.pop()); return r("setAuthenticatedUserContext"), r("clearAuthenticatedUserContext"), config.disableExceptionTracking || (i = "onerror", r("_" + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t["_" + i](config, r, u, e, o), s }), t
@@ -50,7 +35,7 @@
 
 </head>
 
-<body>
+<body id="body">
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -62,8 +47,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">
-                    <img src="/resources/microsoft.png" alt="Microsoft Logo">
+                <a class="navbar-brand" href="http://www.microsoft.com">
+                    <img src="/resources/microsoft.png" alt="Microsoft Logo" style="height: 2.5em;">
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -80,7 +65,7 @@
                             <a href="/partners.html">Partners</a>
                         </li>
                         <li>
-                            <a href="/Application.html">Apply</a>
+                            <a href="/apply.html">Apply</a>
                         </li>
 
                     </ul>
@@ -106,25 +91,21 @@
             <div class="col-md-6">
                 <h2 class="h2Top">Partner Information</h2>
                 <p>
-                    The Industry Explorers’ Program is partnering with organizations that share the same 
-                    passion for technology. The institutions of learning provide a diverse set of candidates 
-                    with a strong foundation in software development. Industry Explorers then sources from 
-                    this talent pool and provides additional training.  Candidates will have continuous 
-                    structured training while working on real world projects. These projects aid the classroom 
-                    learning experience by putting the students in the role of a software developer. 
+                    The Industry Explorers program partners with organizations that share the same
+                    passion for technology and innovation. These institutions of learning provide a diverse set of candidates with a strong foundation in software development. Industry Explorers then sources from this talent pool and provides additional training.  Candidates will have continuous structured training while working on real-world projects.
                 </p>
                 <br />
                 <p>
                     <b>Partner requirements:</b>
                 </p>
                 <ul>
-                    <li>Partners who share a similar vision for diversity in the technology industry.</li>
-                    <li>Partners provide graduates who meet the candidate qualifications.</li>
-                    <li>Partners must provide training in software engineering.</li>
-                    <li>Partners must be willing to attend or present at events hosted by Industry Explorers.</li>
+                    <li>Must share a similar vision for diversity in the software industry</li>
+                    <li>Must provide graduates who meet the candidate qualifications</li>
+                    <li>Provides training in software engineering</li>
+                    <li>Should be willing to attend or present at events hosted by Industry Explorers</li>
                 </ul>
                 <br/>
-                <p>If you are interested in becoming a partner, sign-up below.</p>
+                <p>If you are interested in becoming a partner sign up below.</p>
                     <br />
                     <!-- Button trigger modal -->
                     <button class="btn btn-default" data-toggle="modal" data-target="#myModalHorizontal">
@@ -155,27 +136,27 @@
                                       <div class="form-group">
                                         <label  class="col-sm-2 control-label" for="orgname">Organization Name</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="orgname" placeholder="Enter oganization name" required/>
+                                            <input type="text" class="form-control" id="orgname" placeholder="" name="Organization name" required/>
                                         </div>
                                       </div>
                                         <div class="form-group">
                                             <label class="col-sm-2 control-label" for="contactname">Contact Name:</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="contactname" placeholder="Enter contact name" required>
+                                                <input type="text" class="form-control" id="contactname" placeholder="" name="Contact name" required>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label" for="email">Email:</label>
+                                            <label class="col-sm-2 control-label" for="e-mail">Email:</label>
                                             <div class="col-sm-10">
-                                                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                                                <input type="email" class="form-control" id="e-mail" placeholder="" name="_replyto" required>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label" for="website">Website:</label>
+                                            <label class="col-sm-2" for="site">Website:</label>
                                             <div class="col-sm-10">
-                                                <input type="url" class="form-control" id="website" placeholder="Enter website (starting with http://)">
+                                                <input type="text" class="form-control" id="site" placeholder="http://" name="website">
                                             </div>
-                                        </div>
+                                        </div>                                      
 
                                         <!-- Modal Footer -->
                                         <div class="modal-footer">
@@ -222,7 +203,7 @@
                       <a href="http://adadevelopersacademy.org/" target="_blank">Ada Developers Academy </a>
                   </h2>
                   <p>
-                      Ada Developers Academy (ADA) is a nonprofit software development school whose mission is to cultivate high technical aptitude into tangible software engineering skill and employment.  The program is for women who are passionate about starting a career in software development, but do not have a computer science degree or professional coding experience.  ADA's unique year-long program begins with classroom instruction in cutting-edge web technologies. After successful completion of the in-class work, students are placed in an internship with a Seattle are tech company, where they learn what it's like to be part of a real engineering team shipping production code.
+                      Ada Developers Academy (ADA) is a non-profit software development school whose mission is to cultivate high technical aptitude into tangible software engineering skill and employment.  The program is for women who are passionate about starting a career in software and web development, but do not have a computer science degree or professional coding experience.  ADA's unique year-long program begins with classroom instruction in cutting-edge web technologies. After successful completion of the in-class work students are placed in an internship with a Seattle area tech company where they learn what it's like to be part of a real engineering team shipping production code.
                   </p>
 	       </span>
              </div> <!-- end .col-6 -->
@@ -237,54 +218,47 @@
                      <a href="http://www.kalacademy.org/" target="_blank">Kal Academy </a>
                  </h2>
                  <p>
-                     Kal Academy is a non-profit organization passionate about inspiring women to break through barriers and pursue a career in the technology industry. Kal Academy’s founder has more than 20 years experience in the industry. She is also a distinguished faculty member distinguished faculty at CityU, Bellevue College and University of Washington. After years of teaching at local educational institutions she opened her own academy. The curriculum at Kal Academy is designed to be effective, fast and affordable while providing students with marketable technical skills. After completing the rigorous course work students have been placed in Fortune 500 technology companies.
+                     Kal Academy is a non-profit organization passionate about inspiring women to break through barriers and pursue a career in the technology industry. Kal Academy’s founder has more than 20 years experience in the industry. She is also a distinguished faculty member distinguished faculty at CityU, Bellevue College and University of Washington. After years of teaching at local educational institutions she opened her own academy. The curriculum at Kal Academy is designed to be effective, fast and affordable while providing students with marketable technical skills. After completing the rigorous coursework students have been placed in Fortune 500 technology companies.
                  </p>
 	      </span>
-            </div> <!-- end .col-6 -->
+            </div>
         </div>
 
         <br/>
         <br/>
         </div>
-<!-- Footer -->
- <footer class="footer">
-            <p class="navbar-brand copyright">Copyright &copy; 2015 - Microsoft Corporation - All Rights Reserved.</p>
-            <p><div id="footer-links">
-              <span>Share On:</span>
-              <span><a target="_blank" class="mscom-link socialItemIcon twitter" href="https://twitter.com/share?text=Learn more about the Indu
-stry Explorers program at &url=http://industryexplorer.azurewebsites.net"><img src="https://c.s-microsoft.com/en-us/CMSImages/twitter_icon.png?vers
-ion=3b7b882c-8ac4-b052-70ba-f2ff1414bfe0" class="mscom-image" alt="Share on Twitter" title="Share on Twitter" width="20" height="17"></a></span
->
-             <span><a target="_blank" class="mscom-link socialItemIcon faceBook" href="https://www.facebook.com/sharer/sharer.php?u=http://indu
-stryexplorer.microsoft.com"><img src="https://c.s-microsoft.com/en-us/CMSImages/facebook_icon.png?version=10638df0-5377-0141-d379-24dbd886ea7f"
- class="mscom-image" alt="Share on Facebook" title="Share on Facebook" width="9" height="18"></a></span>
-            <span><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://industryexplorer.azurewebsites.net&title=Micosoft Industry Exp
-lorers&summary=Microsoft Industry Explorers&source=My Website Name" target="_new"> <img src="https://c.s-microsoft.com/en-us/CMSImages/linkedin
-_icon.png?version=806a2655-ccf5-c9f1-74bc-ceed4d5839a5" class="mscom-image" alt="linkedin share button" width="17" height="17" title="Share on
-LinkedIn" /> </a></span>
-</p></div>
-                  </footer>
+        <!-- Footer -->
+    <footer class="footer">
+      <p class="navbar-brand copyright">Copyright &copy; 2015 - Microsoft Corporation - All Rights Reserved.</p>
+      <p><div id="footer-links">
+        <span>Share On:</span>
+        <span><a target="_blank" class="mscom-link socialItemIcon twitter" href="https://twitter.com/share?text=Learn more about the Industry Explorers program at &url=http://www.industryexplorers.com"><img src="https://c.s-microsoft.com/en-us/CMSImages/twitter_icon.png?version=3b7b882c-8ac4-b052-70ba-f2ff1414bfe0" class="mscom-image" alt="Share on Twitter" title="Share on Twitter" width="20" height="17"></a></span>
+       <span><a target="_blank" class="mscom-link socialItemIcon faceBook" href="https://www.facebook.com/sharer/sharer.php?u=http://www.industryexplorers.com"><img src="https://c.s-microsoft.com/en-us/CMSImages/facebook_icon.png?version=10638df0-5377-0141-d379-24dbd886ea7f" class="mscom-image" alt="Share on Facebook" title="Share on Facebook" width="9" height="18"></a></span>
+      <span><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.industryexplorers.com&title=Micosoft Industry Explorers&summary=Microsoft Industry Explorers&source=My Website Name" target="_new"> <img src="https://c.s-microsoft.com/en-us/CMSImages/linkedin_icon.png?version=806a2655-ccf5-c9f1-74bc-ceed4d5839a5" class="mscom-image" alt="linkedin share button" width="17" height="17" title="Share on LinkedIn" /> </a></span>
+    </p></div>
+    </footer>
+
 
             <!-- jQuery -->
             <script src="/scripts/jquery-2.1.4.min.js"></script>
             <!-- Bootstrap Core JavaScript -->
             <script src="/scripts/libraries/bootstrap.min.js"></script>
-            <!-- jQuery Validation-->
-            <script src="/scripts/jquery.validate.js"></script>
-            <script src="/scripts/jquery.validate-vsdoc.js"></script>
+    <!-- jQuery Validation-->
+    <script src="/scripts/jquery.validate.js"></script>
+    <script src="/scripts/jquery.validate-vsdoc.js"></script>
 
-            <script type="text/javascript">
+    <script type="text/javascript">
 
                   $("#formparticipant").submit(function () {
 
                     var organization_name = $("#orgname").val();
                     var contact_name = $("#contactname").val();
-                    var email = $("#email").val();
-                    var website = $("#website").val();
+                    var email = $("#e-mail").val();
+                    var website = $("#site").val();
 
                     $.ajax({
                         type: "POST",
-                        url: "http://ieapi.azurewebsites.net/api/partners",
+                        url: "https://ieapi.azurewebsites.net/api/partners",
                         data: {
                             "organization_name": organization_name,
                             "contact_name": contact_name,
@@ -298,6 +272,7 @@ LinkedIn" /> </a></span>
                         {
                             // Hide the modal
                             $("#myModalHorizontal").modal('hide');
+                            window.location.replace("/partner-thanks.html");
                         },
                         failure: function (response) {
                             alert("Sign Up Error. Please try to sign up again.");
@@ -309,7 +284,8 @@ LinkedIn" /> </a></span>
 
                     return false; // avoid to execute the actual submit of the form.
                 });
-            </script>
+    </script>
+
 </body>
 
 </html>

@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" id="index">
 
 <head>
 
@@ -11,7 +11,7 @@
 
     <title>Industry Explorers</title>
 
-    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/>
 
     <!-- Bootstrap Core CSS -->
     <link href="/stylesheets/libraries/bootstrap.min.css" rel="stylesheet">
@@ -23,22 +23,21 @@
     <link href="/resources/fonts">
 
     <script type="text/javascript">
-        var appInsights = window.appInsights || function (config) {
-            function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f; for (s.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) r("track" + i.pop()); return r("setAuthenticatedUserContext"), r("clearAuthenticatedUserContext"), config.disableExceptionTracking || (i = "onerror", r("_" + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t["_" + i](config, r, u, e, o), s }), t
-        }({
-            instrumentationKey: "91fdfdea-4a5a-4f6c-bc1e-5a4f47293a43"
-        });
+    var appInsights = window.appInsights || function (config) {
+        function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f; for (s.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) r("track" + i.pop()); return r("setAuthenticatedUserContext"), r("clearAuthenticatedUserContext"), config.disableExceptionTracking || (i = "onerror", r("_" + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t["_" + i](config, r, u, e, o), s }), t
+    }({
+        instrumentationKey: "91fdfdea-4a5a-4f6c-bc1e-5a4f47293a43"
+    });
 
-        window.appInsights = appInsights;
-        appInsights.trackPageView();
+    window.appInsights = appInsights;
+    appInsights.trackPageView();
     </script>
 
 </head>
 
-<body>
-
+<body id="body">
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top"  role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -48,8 +47,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">
-                    <img src="/resources/microsoft.png" alt="Microsoft Logo">
+                <a class="navbar-brand" href="http://www.microsoft.com">
+                    <img src="/resources/microsoft.png" alt="Microsoft Logo" style="height: 2.5em;">
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -59,13 +58,13 @@
                         <a href="/">Home</a>
                     </li>
                     <li>
-		                    <a href="/about.html">About</a>
+                        <a href="/about.html">About</a>
                     </li>
                     <li>
                         <a href="/partners.html">Partners</a>
                     </li>
                     <li>
-                        <a href="/Application.html">Apply</a>
+                        <a href="/apply.html">Apply</a>
                     </li>
                 </ul>
             </div>
@@ -75,93 +74,94 @@
     </nav>
 
     <!-- Page Content -->
-        <!-- Heading Row -->
-	<div class="container-fluid">
-        	<div class="row text-center" id="index-heading" >
-			<h1>Industry Explorers</h1>
-			<div class="col-md-6 col-md-offset-3" id="illustration-wrapper">
-		   		<img class="img-responsive" src="/resources/illustration-final.png" />
-                	</div>
-                	<!-- /#illustration-wrapper -->
-        	</div>
-       		<!-- /.row -->
-	</div>
-	<!-- /.container-fluid -->
+    <!-- Heading Row -->
+    <div class="container-fluid">
+        <div class="row text-center" id="index-heading" >
+            <div id="title"><h1>Industry Explorers</h1></div>
+            <div class="col-md-6 col-md-offset-3" id="illustration-wrapper">
+                <img class="img-responsive" style="display: inline-block" src="/resources/illustration-final.png" />
+            </div>
+            <!-- /#illustration-wrapper -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
 
-        <!-- Call to Action Well -->
-        <div class="row">
-                <div id="index-well" class="col-md-12 text-center">
-	    <p>"No computer is ever going to ask a new, reasonable question. It takes trained people to do that." <br>Grace Hopper</p>
-	</div>
-</div>
-<!-- /.row -->
-
-<!-- Content Row -->
+    <!-- Call to Action Well -->
     <div class="row">
-	<div class="container index-wrapper col-md-12">
-	  <div class="col-md-3">
-	    <span class="icon-img">
-		<img src="/resources/molecule1.png"></img></span>
-	    <span class="icon-content">
-		<h2>Program Information</h2>
-		     <p>
-                Microsoft strives to be a company that seeks and supports diverse perspectives.  We
-                have a culture of inclusion and mutual respect.  Even so, we recognize that there
-                are gaps within the high tech community which makes it harder for those diverse perspectives
-                to be heard and leveraged.  The Industry Explorers’ Program provides an alternative
-                approach to talent sourcing, leveraging non-traditional venues to find the passionate
-                and capable talent which may otherwise be overlooked.
-            </p>
-		    <p>For additional information about our program, please select more info.</p>
+        <div id="index-well" class="col-md-12 text-center">
+            <p>"No computer is ever going to ask a new, reasonable question. It takes trained people to do that." <br>Grace Hopper</p>
+        </div>
+    </div>
+    <!-- /.row -->
 
-		<a class="btn btn-default" href="/about.html">More Info</a>
-	    </span>
-	</div>
-	<!-- /.col-md-3 -->
+    <!-- Content Row -->
+    <div class="row">
+        <div class="container index-wrapper col-md-12">
+            <div class="col-md-3">
+                <span class="icon-img">
+                    <img src="/resources/molecule1.png"></img></span>
+                    <span class="icon-content">
+                        <h2>Program Information</h2>
+                        <p>
+                         Microsoft strives to be a company that seeks and supports diverse perspectives while fostering
+                         a culture of inclusion and mutual respect for talented engineers of all backgrounds. <br><br>
+                         The Industry Explorers program provides an alternative approach to talent sourcing,
+                         leveraging modern models and venues to find the passionate and capable talent that may be otherwise overlooked.<br>
+                        </p>
+		                <p>We are currently accepting applications for our 2016 cohort. Please visit our About page to learn more.</p>
 
-	<div class="col-md-6">
-	    <span class="icon-content text-center" id="stats">
-		<h2>Microsoft Workforce: Ethnicities in Tech</h2>
-		<p>Our demographics serve as one measure of our progress
-		   towards a more diverse and inclusive workforce at
-		   Microsoft and in the tech industry as a whole.</p>
-		<div id="stats-wrapper">
-			<span><img src="/resources/race-stats-inclusive2.png" alt="58% caucasian,4% latino,2% black,1% Multi-racial 0.5% American Indian"></img></span>
-			<span><img src="/resources/race-stats-inclusive1.png"</img></span>
-		</div>
-		<!-- /#stats-wrapper -->
-	    </span>
-	</div>
-	<!-- /.col-md-6 -->
-	<div class="col-md-3">
-	    <span class="icon-img">
-		<img src="/resources/molecule3.png"></img>
-	    </span>
-	    <span class="icon-content">
-		<h2>Partner Information</h2>		
-		<p>We are excited to be able to collaborate with learning institutions who are passionate 
-            about diversity and technology. Success is a product of collaboration. The Industry 
-            Explorers’ Program creates an opportunity for historically underrepresented populations 
-            to further their career in the technology industry. The program builds upon the fundamentals 
-            taught by our partners. For additional information, please visit our partner page.</p>
-           
-        <a class="btn btn-default" href="/partners.html">More Info</a>
-        </span>
-	</div>
-<!-- /.col-md-4 -->
-</div>
-<!-- /.row -->
-</div>
-	<!-- Footer -->
-	  <footer class="footer">
-	    <p class="navbar-brand copyright">Copyright &copy; 2015 - Microsoft Corporation - All Rights Reserved.</p>
-	    <p><div id="footer-links">
-	      <span>Share On:</span>
-	      <span><a target="_blank" class="mscom-link socialItemIcon twitter" href="https://twitter.com/share?text=Learn more about the Industry Explorers program at &url=http://industryexplorer.azurewebsites.net"><img src="https://c.s-microsoft.com/en-us/CMSImages/twitter_icon.png?version=3b7b882c-8ac4-b052-70ba-f2ff1414bfe0" class="mscom-image" alt="Share on Twitter" title="Share on Twitter" width="20" height="17"></a></span>
-	     <span><a target="_blank" class="mscom-link socialItemIcon faceBook" href="https://www.facebook.com/sharer/sharer.php?u=http://industryexplorer.azurewebsites.net"><img src="https://c.s-microsoft.com/en-us/CMSImages/facebook_icon.png?version=10638df0-5377-0141-d379-24dbd886ea7f" class="mscom-image" alt="Share on Facebook" title="Share on Facebook" width="9" height="18"></a></span>
-	    <span><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://industryexplorer.azurewebsites.net&title=Micosoft Industry Explorers&summary=Microsoft Industry Explorers&source=My Website Name" target="_new"> <img src="https://c.s-microsoft.com/en-us/CMSImages/linkedin_icon.png?version=806a2655-ccf5-c9f1-74bc-ceed4d5839a5" class="mscom-image" alt="linkedin share button" width="17" height="17" title="Share on LinkedIn" /> </a></span>
-</p></div>
-		  </footer>
+                        <a class="btn btn-default" href="/about.html">Learn More</a>
+                    </span>
+            </div>
+            <!-- /.col-md-3 -->
+
+            <div class="col-md-6">
+                <span class="icon-content text-center" id="stats">
+                    <h2>Microsoft Technical Workforce</h2>
+                    <p>Our demographics serve as one measure of our progress
+		                towards a more diverse and inclusive workforce at
+		                Microsoft and in the tech industry as a whole.</p>
+                    <div id="stats-wrapper">
+                        <span><img src="/resources/stats_burst_v11_10_2015.resized.png" alt="58% caucasian,4% latino,2% black,1% Multi-racial 0.5% American Indian"></img></span>
+                        <span><img src="/resources/stats_legend_v11_10_2015.png"</img></span>
+                    </div>
+                    <!-- /#stats-wrapper -->
+                </span>
+            </div>
+                    <!-- /.col-md-6 -->
+            <div class="col-md-3">
+                <span class="icon-img">
+                    <img src="/resources/molecule3.png"></img>
+                </span>
+                <span class="icon-content">
+                    <h2>Partner Information</h2>
+                    <p>Success is a product of collaboration and we are excited to be able to collaborate with
+                        learning institutions who are passionate about diversity and technology.
+                        Our program builds upon the fundamentals taught by our partners.  <br><br>
+                        The Industry Explorers program is proud to represent an opportunity for technologists
+                        from historically underrepresented populations to further their careers in the industry.  <br><br>
+                        For additional information, please visit our partner page. <br></p>
+
+                        <a class="btn btn-default" href="/partners.html">Learn More</a>
+                    </span>
+                </div>
+                <!-- /.col-md-4 -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.row -->
+    <!-- Footer -->
+  	  <footer class="footer">
+  	    <p class="navbar-brand copyright">Copyright &copy; 2015 - Microsoft Corporation - All Rights Reserved.</p>
+  	    <p><div id="footer-links">
+  	      <span>Share On:</span>
+  	      <span><a target="_blank" class="mscom-link socialItemIcon twitter" href="https://twitter.com/share?text=Learn more about the Industry Explorers program at &url=http://www.industryexplorers.com"><img src="https://c.s-microsoft.com/en-us/CMSImages/twitter_icon.png?version=3b7b882c-8ac4-b052-70ba-f2ff1414bfe0" class="mscom-image" alt="Share on Twitter" title="Share on Twitter" width="20" height="17"></a></span>
+  	     <span><a target="_blank" class="mscom-link socialItemIcon faceBook" href="https://www.facebook.com/sharer/sharer.php?u=http://www.industryexplorers.com"><img src="https://c.s-microsoft.com/en-us/CMSImages/facebook_icon.png?version=10638df0-5377-0141-d379-24dbd886ea7f" class="mscom-image" alt="Share on Facebook" title="Share on Facebook" width="9" height="18"></a></span>
+  	    <span><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.industryexplorers.com&title=Micosoft Industry Explorers&summary=Microsoft Industry Explorers&source=My Website Name" target="_new"> <img src="https://c.s-microsoft.com/en-us/CMSImages/linkedin_icon.png?version=806a2655-ccf5-c9f1-74bc-ceed4d5839a5" class="mscom-image" alt="linkedin share button" width="17" height="17" title="Share on LinkedIn" /> </a></span>
+  </p></div>
+  		  </footer>
+
     <!-- jQuery -->
     <script src="/scripts/libraries/jquery.js"></script>
     <!-- Add JS file so that older browsers render HTML5 properties -->
@@ -170,6 +170,5 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="/scripts/libraries/bootstrap.min.js"></script>
 
-</body>
-
+    </body>
 </html>
